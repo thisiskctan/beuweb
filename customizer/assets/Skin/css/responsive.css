@@ -1,0 +1,1636 @@
+@media all and (min-width: 960px) {
+.sBarTarget  .panel_cls{display: none;}
+#tooler #sBarTabWidget #sBarTabs li{ border-bottom: solid 1px #b9b3a2;}
+#tooler #sBarTabWidget #sBarTabs li.active{border-style: solid; border-width: 1px;  border-bottom: 0 none; border-color: rgba(0,0,0,0.4);}
+#sBarTabWidget #sBarTabs li.active{ margin-top: -9px; padding-top:8px;}
+#sBarTabs li.last {border-right: solid 1px ; border-radius:0 10px 0 0;}
+#sBarTabs li.first {border-left: solid 1px ; border-radius:10px 0 0 0;}
+
+#sBarTabs li.active:after,#sBarTabs li.active:before{
+	content: '';
+    display: block;
+	width: 0; 
+	height: 0; 
+    position: absolute;
+	top: -1px;
+}
+#sBarTabs li.active:after{
+	border-top: 9px solid transparent;
+	left: 100%;
+	}
+
+#sBarTabs li.active:before{
+	border-top: 9px solid transparent;	
+	right:100%;
+	}
+#sBarTabs li.active.last:after,#sBarTabs li.active.first:before{ display: none;}
+
+#sBarTabWidget .sBarTarget{ overflow-y: auto;}
+#sBarTabWidget .sBarTarget .main-tabcontent{ min-height:470px; width:255px;}
+
+
+ 	.product > ul > li{width: 198px;}
+ 	.product li li{width: 58px; height: 58px;}
+ 	.product li li img{ max-height:50px;}
+	.product li li a{line-height:56px;height:56px;}
+#sBar {
+width:228px;
+}
+
+#sBarTabWidget .sBarTarget .main-tabcontent{width: 196px;}
+
+#sBarBtn a {
+width:105px;
+font-size:1.5em;
+line-height:14px;
+}
+#sBarTabs li{
+
+}
+#sBarTabs li.last  {}
+#sBarTabWidget #sBarTabs li.first.active {
+    /* height: 75px; */
+}
+
+#sBarTabs li a {
+background-size:216px 250px!important;
+}
+#sBarTabWidget #sBarTabs li.active a {
+background-position:7px -183px !important;
+}
+#sBarTabWidget #sBarTabs li.products a {
+background-position:-70px -2px!important;
+}
+#sBarTabWidget #sBarTabs li.text a {
+background-position:-147px -95px!important;
+}
+#sBarTabWidget #sBarTabs li.active.products a {
+background-position:-70px -94px!important;
+}
+#sBarTabWidget #sBarTabs li.active.text a {
+background-position:-147px -3px !important;
+}
+#sBarTabs li span {
+height: 42px;
+}
+#sBarTabWidget #sBarTabs li.last span {
+}
+#sBarTabs li.first span {
+}
+textarea {
+width:161px;
+}
+.addText button {
+padding:0 6px;
+}
+.font {
+font-size:1.1em;
+}
+.select-font img {
+width:100%;
+height:auto;
+}
+.font-style li {
+height:18px;
+width:14px;
+font-size:.9em;
+line-height:18px;
+padding:0 2px;
+}
+.font-style li img {
+width:100%;
+height:80%;
+}
+.shape li {
+margin-right:4px;
+width:60px;
+height:20px;
+}
+.shape li a {
+background-size:152px 90%;
+background-position:-91px -1px;
+}
+.shape li a.active {
+background-position:left -1px;
+}
+.font-style.none li {
+padding-top:2px;
+height:16px;
+}
+button {
+font-size:1.1em;
+line-height:26px;
+}
+.adjust-shape span {
+font-size:.9em;
+padding-right:8px;
+margin-right:0px;
+}
+.adjust-shape img {
+width:128px;
+height:auto;
+}
+.how-to-use {
+margin-left:20px;
+}
+.top-text-panel {
+padding-left:14px;
+z-index:99;
+}
+.top-text-panel .how-use {
+left:29px;
+}
+
+.productColorWidget ul {
+padding-top:5px;
+}
+.productColorWidget {
+width:auto;
+float:right;
+}
+.ProductTab .ProductSelect {
+width:202px;
+}
+
+.clipartSearchTxt {
+width:146px;
+}
+.clipart .clipartSelect {
+width:202px;
+}
+h2 {
+font-size:1.1em;
+}
+.layout-slider {
+width:132px!important;
+margin-top:7px;
+}
+.arching .layout-slider, .spacing .layout-slider {
+	width:98% !important;
+}
+.adjust-shape {
+padding-right:0px;
+}
+#uploader > a{font-size: 1.1em !important;line-height: 26px;padding: 0 8px;}
+#uploader_browse{float: left;}
+
+.buttonset a.upload-photo-btn {line-height: 26px;}
+
+
+
+
+.viewport {
+height:90%;
+bottom:0px;
+top:10%;
+}
+.outside-click {
+left:251px;
+}
+#handler {
+ bottom: 0;
+    height: 90%;
+    top: auto;
+}
+#productSize input[type="text"]{ margin-right:2px;}
+#uWrapper{min-height: 180px;}
+#uWrapper ul{margin-bottom: 3px;}
+
+.upload-photo{padding-top: 10px;}
+.outer .buttonset a.upload-photo-btn{letter-spacing: 0px;padding: 0 8px;}
+
+#sBar .product {
+    margin-left:-4px;
+	margin-right:-4px;
+}
+
+}
+
+
+@media all and (max-width: 767px) and (min-width: 0px) {
+#layerWidget{ top: 50%;}
+
+.product li {float: left;}
+
+body, html, .outer {
+height:100%;
+overflow:hidden;
+position:relative;
+}
+.custom-order{ top:36px}
+.socialWidget{float: left;margin-bottom: 10px;}
+#designColorWidget span {
+display:none !important;
+}
+#designColorWidget {
+ display: none;
+ left: 0;
+ position: absolute;
+ top: -90px;
+}
+#designColorWidget{padding:0;top: -38px; height:100%; margin-bottom: 20px;}
+#designColorWidget .clipart-color{display: none; margin-bottom: 48px;}
+#designColorWidget,.morecolorbox.block{ display: block;}
+
+.morecolorbox ul{ padding-left: 10px; padding-right: 10px;}
+.ipod-bottom > a{position: relative;top:-2px;}
+/*  .custom-order {
+position:fixed;
+left:0px;
+top:0px;
+background:url("../images/toolbar.jpg") repeat scroll 0 0 transparent;
+padding:0 2%;
+z-index:99;
+width:96%;
+} */
+.outline-color li {
+    float: left;
+    margin-top: 5px;
+    width: 16%;
+}
+ #sBar {
+width:185px;
+}
+.select-font{height: auto;}
+#sBarBtn a {
+width:69px;
+font-size:1.2em;
+padding-left:10px;
+padding-right:10px;
+}
+#sBarTabWidget #sBarTabs {
+border:0px !important;
+border-radius:0px !important;
+}
+#sBarTabWidget #sBarTabs li {
+background:none !important;
+border:0px !important;
+margin-right:20px;
+width:auto !important;
+height:auto !important;
+}
+#sBarTabWidget #sBarTabs li.last {
+margin-right:0px;
+}
+#sBarTabWidget #sBarTabs li span {
+display:none !important;
+}
+#sBarTabWidget #sBarTabs li.first a,#sBarTabWidget #sBarTabs li.last a,#sBarTabWidget #sBarTabs li a {
+padding:0px;
+background: url("../images/blank.png");
+color:#000 !important;
+background-position: left top;
+}
+#sBarTabWidget #sBarTabs li.active a {
+font-weight:normal !important;
+}
+#language .language {
+display:none;
+}
+.top-text-panel dfn {
+display:none;
+}
+.top-text-panel {
+padding-left:0px;
+float:right;
+padding-top:8px;
+}
+.how-to-use {
+margin-left:0px;
+text-indent:-999999px;
+
+}
+.top-text-panel > .how-to-use {
+position: relative;left: 35px;
+}
+#designEditor {
+width:100%;
+margin:0px;
+left:0px;
+border:0px!important;
+border-radius:0px!important;
+bottom:-95px;
+display:block;
+height:auto;
+padding-bottom:6px;
+padding-top:5px;
+}
+
+.clipartRotator li {
+ height: 22px;
+ margin-right: 4px;
+ width: 24px;
+}
+.viewport, #handler {
+height:auto;
+top:42%;
+margin-top:-126px;
+}
+img, #handler img, .viewport img {
+max-width:100%;
+height:auto;
+}
+.position-handler .position {
+width:12px;
+height:12px;
+}
+.position-handler {
+ height: 57px;
+ width: 47px;
+}
+.position-handler .position {
+width:15px!important;
+height:15px!important;
+}
+.position-handler .position img {
+width:100%!important;
+height:100%!important;
+}
+
+.position-handler .position.left {
+top:21px!important;
+}
+.position-handler .position.top {
+left:14px!important;
+}
+.position-handler .position.bottom {
+left:14px!important;
+}
+.position-handler .position.right {
+top:21px!important;
+}
+.clipartNavigator {
+ margin: 24px 0 0 10px;
+}
+.degree {
+width:62px;
+}
+.degree span {
+font-size:.9em;
+}
+.degree span span {
+display:none;
+}
+.degree input[type="text"] {
+ height: 14px;
+ width: 50px;
+ padding:5px;
+}
+.degree input[type="button"] {
+width:56px;
+height:22px;
+font-size:.9em;
+margin-left:0px;
+margin-top:3px;
+line-height:22px;
+}
+ .ipod-bottom {
+ display: block;
+}
+#rsBar {/*float:left;*/
+clear:right;
+float:right;
+}
+.productColorWidget {
+padding-top:5px;
+}
+.productColorWidget span {
+margin-right:0px;
+line-height:16px;
+letter-spacing:0px;
+cursor:pointer;
+margin-top:0px;
+margin-bottom:0;
+padding-bottom:0px;
+background: url("../images/blank.png");
+font-size: 1.3em;
+position:absolute; top:10px; right:10px;
+}
+.direction-link {
+display:block;
+}
+.how-use.msg {
+display:none;
+}
+.sBarTarget {
+position:fixed;
+width:92%;
+left:2%;
+top:8px;
+min-height:81px;
+border:1px solid #D4D4D4;
+padding:5px 2%;
+}
+
+.ProductTab .product {
+background:none;
+border:none;
+font-size:0.9em;
+margin-bottom:0px;
+padding-bottom:0px;
+}
+.ProductTab .product .prev {
+background-position:left -97px;
+}
+.ProductTab .product .prev:hover {
+background-position:left -77px !important;
+}
+.ProductTab .product .next {
+background-position:right -37px;
+}
+.ProductTab .product .next:hover {
+background-position:right -17px !important;
+}
+.sBarTarget.block {
+display:block !important;
+}
+
+ .sBarTarget .close_btn {
+display:none;
+}
+.addText {
+width:47%;
+float:left;
+}
+.TextTab .heading {
+display:none;
+}
+.TextTab .arching .heading {
+	display: block;
+}
+.TextTab .effect .heading {
+	display: block;
+}
+
+.TextTab .spacing .heading {
+	display: block;
+}
+.TextTab button {
+ border-radius: 4px 4px 4px 4px;
+ color: #C9C9BF;
+ font: 0.9em/20px 'Roboto',sans-serif;
+ letter-spacing: 0;
+ margin: 2px 0 0;
+ padding: 0 4px;
+}
+.addText textarea {
+ color: #90908E;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+
+}
+.font {
+overflow:visible;
+background:none;
+padding-bottom:0px;
+}
+.font-detail {
+height:55px;
+}
+.font-style {
+/*float:none;
+clear:both;*/
+padding-top:6px;
+}
+.select-font {
+margin-top:0px;
+width:50%;
+float:right;
+margin-bottom: 5px;
+}
+.mCSB_scrollTools .mCSB_buttonUp, .mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight {
+width:12px!important;
+height:11px!important;
+}
+.mCSB_buttonUp span, .mCSB_buttonDown span {
+height:11px;
+background-size:12px 8px;
+}
+.mCustomScrollBox .mCSB_scrollTools {
+width:16px!important;
+}
+.mCSB_scrollTools .mCSB_dragger {
+width:12px!important;
+}
+.mCSB_scrollTools .mCSB_buttonDown {
+margin-top:-28px!important;
+}
+.mCSB_scrollTools .mCSB_buttonUp + .mCSB_draggerContainer {
+padding-bottom:28px!important;
+}
+.font-style li {
+width:11px;
+height:17px;
+font:.8em/17px 'Roboto',sans-serif;
+}
+.font-style li img {
+height:13px;
+}
+.font-style.none li {
+height:14px;
+}
+.shape {
+clear:left;
+padding:0px 0 0 0px;
+position:absolute;
+right:16px;
+bottom:26px;
+}
+.adjust-shape {
+padding:3px 0 0 0px;
+position:absolute;
+right:7px;
+bottom:7px;
+overflow:visible;
+}
+.adjust-shape span {
+font-size:.9em;
+padding-right:7px;
+line-height:12px;
+padding-bottom:0px;
+margin-right:0px;
+}
+.shape li a {
+background-size:140px 22px;
+background-position:-82px 0px;
+}
+.shape li a.active {
+background-position:left 0px;
+}
+.adjust-shape .slider-range {
+width:121px;
+height:6px;
+}
+.shape li {
+width:59px;
+height:20px;
+}
+.top-text-panel .how-use {
+left:0px;
+position:fixed;
+left:0px;
+top:3px;
+width:94%;
+z-index:4;
+margin:0 1%;
+padding:2%;
+height:113px;
+height:auto;
+}
+.top-text-panel .how-use .how-to-use.close {
+text-indent:0;
+}
+.top-text-panel .how-use li {
+margin-left:10px;
+width:84px;
+}
+.productColorWidget .color-list {
+border: 1px solid #d4d4d4;
+left: 2%;
+min-height: 81px;
+padding: 5px 2%;
+position: fixed;
+width: 92%;
+background: url("../images/content.png") repeat scroll left bottom transparent;
+transition: all 0.5s ease 0s;
+border-radius: 10px;
+top: -110%;
+/* box-sizing: border-box; */
+z-index: 9999;
+
+}.productColorWidget .color-list.block{top: 10px;}
+.productColorWidget ul {
+overflow:auto;
+}
+.productColorWidget ul li {
+    cursor: pointer;
+    float: left;
+}
+#productThumb ul li {
+height:72px;
+}
+ #productSize label {
+font:bold 12px/28px 'Roboto',sans-serif;
+}
+#productSize input[type="text"] {
+width:28px;
+height:15px;
+margin-right:4px;
+}
+#productSize a {
+margin-top:0px;
+}
+#productSize {
+margin:5px 0 15px 0;
+float:none;
+}
+#productSize a {
+
+}
+.productPrice span {
+font:bold 2.5em/25px 'Roboto', sans-serif;
+/* float:left; */
+}
+.productPrice .addCartBtn {
+font: bold 1.6em/15px 'Roboto', sans-serif;
+ /*height: 36px;*/
+padding:0;
+position:absolute; top:6%; right:5px; width:100px;
+}
+.size label {
+display:none !important;
+}
+.productPrice {
+float:none;
+display:table;
+width:100%;margin-bottom: 10px;
+}
+.sbHolder{height: 30px !important;}
+.sbSelector {font-size: 0.9em;line-height: 30px;}
+ .sbOptions a{font-size: 0.9em;}
+ .sbToggle{top: 13px;}
+ .ProductTab .product{width: 66%;float: right;}
+
+#sBarTabWidget{padding-top: 0}
+.top-text-panel{padding-top: 0}
+
+#productSize {margin: 5px 0}
+
+
+.product > ul{height:88px;}
+
+.product li ul {
+    display: inline;
+    height: auto;
+    overflow: inherit;
+	margin-bottom:0;
+}
+
+.product > ul > li {
+    display: inline;
+    float: none;}
+.bx-paging{display: none;}
+
+
+
+  
+
+  
+#uWrapper,.product{ min-height: 0;}
+
+
+
+
+.product li  { height: 52px;  width: 52px; border: 0 none;
+    background:white;
+    float: left;
+    overflow: hidden;
+     box-sizing: border-box;
+}
+
+ .product li a {
+    border: 1px solid white;
+    display: block;
+    height: 52px;  
+    width: 52px; 
+    line-height: 52px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+ .product li img{max-height: 52px;}
+
+.ProductTab div.prodCat-option .sbHolder {  height: 30px !important;}
+
+
+/* .productColorWidget .color-list, */#sBarTabWidget .sBarTarget{ transition: all 0.5s ease; display: block; top: -120%; overflow: visible;}
+#sBarTabWidget .sBarTarget.block{ top: 10px; border-radius: 10px;}
+.productColorWidget {padding-top:0;}
+.productColorWidget .color-list{ /* width: 98%; padding:1% */}
+.productColorWidget ul#pColor{ overflow: hidden;padding: 10px;}
+.top-text-panel{display: none;}
+#sBarTabWidget .uploadCommon{ border-radius: 10px;}
+
+
+.prodCat-option .prod-SubCat {
+    background: none;
+    padding-left: 0;
+}
+
+
+.productColorWidget .color-list .panel_cls{display: block;}
+
+#sBarTabWidget{ border: 0 none !important; margin:0;}
+
+a.upload-photo-btn, button{ line-height: 22px; margin-bottom: 10px;}
+.uploadContent {
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+    text-align: left;
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+}
+
+
+.main-contentarea .tablehead{display: none;}
+.main-contentarea td {display: block;}
+.main-contentarea td strong{display: block;background: #ececec; padding: 10px; margin-bottom: 10px;}
+
+/* style by ritesh */
+.edit-area{
+	display:none;
+}
+.preview-mobile {
+	display:block;
+    position: absolute;
+    top:25px;
+    z-index: 9;
+    left:10px;
+}
+.preview-mobile .previewShow{
+	margin-left:0;
+}
+.download-button {
+    left: 7px;
+    position: absolute;
+    top: 48px;
+}
+
+
+
+
+}
+ @media all and (max-width: 767px) and (min-width: 480px) {
+
+.top-text-panel .how-use li {
+width:123px;
+margin-left:20px;
+}
+.viewport, #handler {
+top:0px;
+margin-top:0px;
+}
+.ipod-clipart-text {
+width:36%;
+padding:10px;
+}
+.select-font {
+margin-bottom:5px;
+}
+.font-style {
+float:left;
+clear:none;
+margin-bottom:6px;
+}
+#cliparts .i-pod-btn {
+float:right;
+width:55%;
+padding-left:1%;
+padding-right:1%;
+padding-top:30px;
+}
+/* #productThumb ul {
+left:0px;
+width:96%;
+padding-left:2%;
+padding-right:2%;
+}
+#productThumb ul li {
+width:24%;
+} */
+.size {
+float:left;
+}
+#productSize label {
+font-size:16px;
+margin-right:10px;
+}
+#productSize input[type="text"] {
+margin-right:10px;
+}
+
+.productPrice span {
+font-size:3.5em;
+line-height:100%;
+}
+.productPrice span small {
+display:inline;
+}
+.productPrice .addCartBtn {
+float:left;
+}
+.productPrice {
+margin-bottom:16px;
+}
+#productSize {
+margin-top:15px;
+}
+.clipartRotator li {
+width:26px;
+height:28px;
+}
+.position-handler {
+margin-left:0px !important;
+}
+.degree {
+width:auto;
+}
+.degree input[type="text"] {
+width:110px;
+margin-right:10px;
+float:left;
+}
+.degree input[type="button"] {
+margin-top:8px;
+float:left;
+height:24px;
+}
+.clipartNavigator {
+margin-bottom:3px;
+}
+/*#cliparts .i-pod-btn button{width:100%;}*/
+}
+
+ 
+
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:landscape) {
+
+}*/
+
+ @media all and (max-width: 959px) and (min-width: 768px) {
+ 	/* changes by ritesh */
+
+.top-text-panel {
+    left: 135px;
+    padding-left: 0;
+    padding-top: 8px;
+    position: fixed;
+    top: 22px;
+    z-index: 9;
+}
+.top-text-panel .previewShow {
+   display:none;
+
+}
+.download-button {
+    bottom:100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: auto;
+     z-index: 99;
+}
+.preview-mobile {
+	display:block;
+    bottom: 125px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align:center;
+     z-index: 99;
+}
+.preview-mobile .previewShow {
+	   margin-left:0;
+}
+.edit-area{
+	display:none;
+}
+#designEditor .edit-area {
+	display: block;
+    float:left;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 45px;
+    padding: 5px 0 0;
+    position: static;
+    width: 70px;
+}
+
+
+.top-text-panel dfn {
+display:none;
+}
+#sBarTabWidget {
+position:relative;
+z-index: 9999;
+}
+#sBarTabs {
+position:relative;
+z-index:999;
+}
+#sBarTabWidget .sBarTarget {
+position:absolute;
+z-index:100;
+}
+.clipart .search{padding-bottom: 5px;width: 18%;float: left;position: absolute;right:30px;overflow: hidden}
+.ipad-search h2{font-size: 12px;padding: 10px 0px 10px 5px;float: left;}
+.sBarTarget .sbHolder{height: 33px !important;margin-bottom: 6px !important;float: left;width:35% !important;margin-left: 1%; }
+.sbSelector{line-height: 33px;}
+.sbToggle {    right: 8px;    top: 15px;}
+/*#sBar #sBarTabWidget .sBarTarget.hidden {
+padding:0px;
+border:0px !important;
+}*/
+#language{display: none;}
+#sBar #sBarTabWidget .sBarTarget.hide > div{
+overflow: hidden;
+}
+
+#sBarTabWidget .sBarTarget.active {
+padding:0px;
+border:0px !important;
+}
+
+.ipad-search {
+/* float:left;
+width: 65%; */
+}
+.product {
+/*float:left;
+width:47%;
+height:123px;*/
+padding-top:4px;
+padding-bottom:4px;
+margin-bottom: 0;
+}
+.clipartSearchTxt {
+width:65%;
+padding:5px 5%;
+}
+.clipartSearchBtn {
+width:20%;
+padding:0px;
+font-size:18px;
+}
+.clipart .clipartSelect {
+width:100%;
+}
+.search input[type="button"] , input[type="button"]:hover{
+	font-size:0;
+	background: url("../images/search.png") no-repeat  center center !important;
+	background-size: 20px  !important;
+	border: 0px;
+	position: fixed;
+/*	right: 21px;top:27px;*/
+	height: 34px;width: 30px
+}
+.search .clipartSearchTxt{width: 88%;left: 135px}
+.upload {
+right:24%;
+top:0;
+}
+.upload button{font-size: 10px;padding: 11px 4px;line-height: 1}
+.upload-wrapper,.upload-detail {
+left:0px;
+bottom:0px;
+width: 100%;
+height: 100%;
+padding:10px 10px 10px 100px;
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+}
+.upload-photo {
+left:0px;
+bottom:0px;
+}
+#rsBar {
+position: absolute;
+right: 10px;
+z-index: 80;
+top:10px;
+}
+
+
+.upload-wrapper #uWrapper{  float: none;
+    margin-top: 0;
+    min-height: 0;
+    width: 100%;}
+.upload-wrapper .upload-photo ul{ float: left;}
+.upload-wrapper .upload-photo{float: none; width: 100%; padding: 0; float: left;}
+.upload-wrapper .uploadOption { float: right; width: 40%; padding: 10px; }
+
+.productColorWidget .color-list {
+/* width:289px;
+margin-top:16px; */
+}
+.productColorWidget ul {
+/* height:75px;
+overflow:auto;
+padding-top:5px;
+padding-bottom:2px; */
+}
+.how-use.msg {
+display:none;
+}
+.productColorWidget {
+margin-bottom:10px;
+}
+.collapse {
+display:block;
+left: -86px;
+right: 0;
+}
+#productThumb {
+width:100px;
+}
+.direction-link {
+display:block;
+position:static;
+color:#000000!important;
+font-size:1.1em;
+line-height:18px;
+letter-spacing:1px;
+text-transform:uppercase;
+text-decoration:none;
+border:1px solid #999999;
+border-radius:3px 3px 0 0;
+padding-left:5px;
+}
+.direction-link span {
+display:block;
+float:right;
+border-left:1px solid #999999;
+border-radius:0 3px 0 0;
+}
+#productThumb li {
+float:none;
+width:auto;
+}
+#sBarTabWidget #sBarTabs li,#tooler #sBarTabWidget #sBarTabs li.active{height:80px;}
+#sbHolder_43001730{left: 25%;}
+#sBarTabWidget .sBarTarget{
+	max-height: 234px;
+	padding-left: 110px;
+	border-radius:0 10px 10px 0 !important; 
+   -moz-box-sizing:    border-box;   /* Firefox 1, probably can drop this */
+   -webkit-box-sizing: border-box;   /* Safari 3-4, also probably droppable */
+    box-sizing:        border-box;   /* Everything else */
+	width: 100%;
+	border: 1px solid #ada686;
+	border-top:1px solid #ada686 !important;
+}
+.ProductTab .ProductSelect {
+float:left;
+margin-top:30px;
+width:25%;
+}
+
+.degree input[type="button"]:hover{
+	font-size:  1.4em;
+	background: linear-gradient(#62625c, #484843) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.addText {
+float:right;
+width:47%;
+margin-right:4%;
+}
+.addText textarea {
+ height: 108px;
+}
+.main-tabcontent .font {
+width:45%;
+background:none;
+float: left;
+}
+.heading {
+display:none;
+}
+.select-font {
+width:100%;
+margin-right:3%;
+margin-top:0px;
+height: 160px;
+}
+.font-style li.right { margin-right: 0;}
+
+
+.font-style.none{right: 202px;}
+.shape {
+float:right;
+clear:both;
+margin-top:-83px;
+padding-top:0px;
+}
+.adjust-shape {
+float:right;
+clear:both;
+margin-top:-44px;
+}
+.addText button {
+ margin-right:20px;
+ padding: 0 27px;
+ font-size:1.1em;
+	float:left;
+}
+.addText button + button {
+margin-right: 0;
+}
+#productThumb li {
+display:none;
+}
+#productThumb li.active {
+display:block;
+}
+.how-use {
+	bottom: 100%;
+    left: auto;
+    top: auto;
+	right: 0;
+}
+.how-to-use {
+float:right;
+margin-left:10px;
+}
+.how-use .how-to-use.close {
+float:left;
+}
+.adjust-shape .layout-slider {
+margin-top:8px;
+}
+.viewport {
+height:auto;
+bottom:130px;
+top:auto;
+width: 80%;
+left: 10%;
+}
+.viewport img {
+width:100%;
+height:auto;
+}
+#designEditor {
+margin:0px;
+width:100%;
+border-radius:0px !important;
+left:0px;
+border-left:0px !important;
+border-right:0px !important;
+height:104px;
+padding-top:10px;
+bottom: -115px;
+z-index: 9999;
+}
+#designColorWidget {
+font-size:1.5em;
+line-height:1.3;
+}
+#designColorWidget li {
+width:20px;
+height:20px;
+margin-right:3px;
+}
+.clipartRotator li {
+padding:4px;
+}
+.clipartRotator {
+padding-bottom:20px;
+}
+.position-handler .position {
+padding:3px;
+border-radius:23px !important;
+}
+.position-handler .position.right, .position-handler .position.left {
+top:32px !important;
+}
+.position-handler .position.bottom, .position-handler .position.top {
+left:25px !important;
+}
+.position-handler {
+width:79px;
+padding-bottom:13px;
+margin-top:2px;
+margin-left:15px;
+}
+.degree {
+width:auto;
+padding-left:20px;
+}
+.degree span {
+font-size:1.5em;
+line-height:1.2;
+}
+.degree span span {
+font-size:100%;
+}
+#clipartEditor {
+padding-left:20px;
+}
+.degree input[type="text"] {
+margin-top:10px;
+width:60px;
+}
+.degree input[type="button"] {
+margin-top:10px;
+width:78px;
+margin-left:10px;
+float:left;
+}
+.ipod-bottom{display: block !important;}
+.ipod-bottom > a{display: none;}
+.tool-click{height: 36px; cursor: pointer;}
+.tool-click span{padding-top: 8px;}
+#tooler{padding:0 10px; }
+#sBarTabWidget{  border: none !important;   border-radius: 0 important;}
+.sBarTabs-wapper{ width:100px;float: left; margin:0; z-index:100;}
+#sBarTabs li{float: none; width: 100%;}
+#sBarTabs{width: auto;border-radius: 0px !important;}
+
+#sBarTabWidget #sBarTabs li.first{ padding-top:8px; border-radius: 0 !important;}
+#sBarTabWidget #sBarTabs li.last{ border-radius: 0 !important;}
+#sBarTabWidget #sBarTabs li{height: 84px !important;}
+#sBarTabWidget #sBarTabs li.last{height: 82px !important;}
+
+/* #sBarTabWidget #sBarTabs li#clip-art a { background-position: 13px -217px;} */
+
+#sBarTabs li.first:after,#sBarTabs li.last:after{
+	content: '';
+    display: block;
+	width: 0; 
+	height: 0; 
+    position: absolute;
+	border-left: 9px solid #5c563e;
+	left: 100%;
+}
+#sBarTabs li.first:after{
+	border-top: 9px solid transparent;	
+	top: 0;
+	}
+
+
+	
+#sBarTabs li.last:after{
+	border-bottom: 9px solid transparent;
+	bottom: 0;	
+	}
+#sBarTabs li span { height: 62px;}	
+#sBarTabs li.first span { height: 55px;}
+#sBarTabs li.last span { height: 55px;}
+
+#sBarTabWidget #sBarTabs li.active { background: url("../images/tab-bg.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);}
+
+#sBarTabs li{border-top: 1px solid #b9b3a2;border-bottom: 1px solid #b9b3a2;}
+#sBarTabs li.first,#sBarTabs li.last{border: 0 none !important;}
+#sBarTabs {border: 1px solid #b9b3a2; margin-top: -9px;}
+
+.sBarTarget  .panel_cls{display: block;}
+
+#sBarTabWidget .sBarTarget{transition: all 0.5s ease; left: -100%; display: block; top: 0; z-index:1;margin-left: 114px; height:238px;}
+#sBarTabWidget .sBarTarget.block{left: 0%; z-index: 99; margin-left: 0;}
+
+#productDelBtn{bottom: 38px;}
+#cWrapper {width: 100%;overflow: hidden;}
+
+.product > ul{height:88px;}
+
+.product li ul {
+    display: inline;
+    height: auto;
+    overflow: inherit;
+	margin-bottom:0;
+}
+
+.product > ul > li {
+    display: inline;
+    float: none;}
+.bx-paging{display: none;}
+
+
+
+
+
+/* .product > ul.clearfix > li{width: 630px;margin-top:0;}
+.ProductTab .product > ul.clearfix > li{width: 610px;}
+.product > ul.clearfix > li li  {margin-left: 10px;
+    margin-top: 19px;
+    min-height: 67px;
+    width: 78px;}
+.upload .upload-wrapper .product > ul.clearfix > li ul{padding-left: 48px; width: auto;}
+#sBarTabWidget #sBarTabs li.active{ border-right: 0px;} */
+#sBar{ width: 100%; overflow: hidden; position: static;}
+#handler {
+/*     bottom: 130px;
+    height: auto;
+    left: 10%;
+    position: fixed;
+    text-align: center;
+    top: auto;
+    width: 80%;
+    z-index: 1; */
+}
+
+	
+#handler,.viewport {
+    bottom: 0;
+    height: 75%;
+    top: 2%;
+}
+
+
+.productColorWidget { margin-top: 16px;}
+.productColorWidget span { line-height: 20px;}
+
+#sBarTabWidget #sBarTabs li#clip-art a{ background-position: 13px 9px;}
+#sBarTabWidget #sBarTabs li#clip-art.active a{  background-position: 13px -211px;}
+
+}
+
+
+@media all and (max-width: 960px) {
+   
+.morecolorbox{ overflow: auto; height: 118px;position: fixed; bottom: 0;z-index: 9999;border-radius: 0;-moz-border-radius: 0px;-webkit-border-radius: 0px;}
+
+    
+}
+
+@media all and (min-width: 960px) {
+ .bx-controls{background: url("../images/border-bottom.gif") center top no-repeat ; overflow: hidden; margin-top: 15px; padding-top: 15px;}
+ .bx-wrapper .bx-viewport{height: 272px !important;}
+ 
+ #layerWidget{top: 52px;right: 117px;}
+}
+
+@media all and (min-width: 768px) {
+    #layerWidget ul li.active strong{display: block;} 
+    .custom-order a.close-btn{ display: none;}
+}
+
+@media all and (max-width: 767px) and (min-width: 0px) {
+    .bx-controls{ padding-top: 8px; overflow: hidden;}
+    .ProductTab .product {
+    float: right;
+    }
+.product {
+    font-size: 0.9em;
+    min-width: 194px;
+}
+.bx-wrapper{max-width: 100% !important;}
+.sBarTarget .product ,.ProductTab .product {
+    float: none;
+    width: 100%;
+}
+
+.upload .upload-btn{ position: absolute; top: 6px; right: 6px;}
+
+a.upload-photo-btn, button {
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.sbHolder .sbToggle{ background:url("../images/select-arrow.png")right center no-repeat;}
+
+
+.sBarTarget div.prodCat-option{  box-sizing: border-box; margin-bottom: 6px;}
+  .sBarTarget .product{ margin:0; padding-bottom:0; }
+  .sBarTarget div.prodCat-option .sbHolder, .sBarTarget div.prodCat-option .prod-SubCat {
+    height: 29px !important;
+    width: 48% !important;
+    float: left;
+} 
+.sBarTarget  div.prodCat-option .prod-SubCat{ float: right;}
+.sBarTarget  div.prodCat-option .prod-SubCat .sbHolder{width: 100% !important;}
+.sBarTarget .prod-SubCat{ float: right;}
+.clipart  div.prodCat-option{  box-sizing: border-box; padding-right: 130px;}
+
+
+
+.font-style{margin-right: 0;}
+.font-style li{margin-right: 8px}
+
+.font-detail {
+    height: 83px;
+}
+
+.productColorWidget ul#pColor { padding: 3px 0;}
+
+#designColorWidget{ position: static;}
+
+.custom-order{}
+.custom-order-overlay{}
+
+#layerWidget ul li.active strong,#layerWidget ul li strong{display: none;}
+#layerWidget ul li.active  a.delete,#layerWidget ul li a.delete{display: block ;margin: 0;height: 35px;width: 31px; background-position: center center;}
+
+#layerWidget li small{width: 86px;}
+
+.degree {
+    width: 85px;
+}
+
+.clipartNavigator {
+    margin: 9px 0 0;
+}
+
+#designEditor {  height: 84px;}
+
+.addText textarea{  font-size: 1.5em;
+    height: 107px;
+    margin-bottom: 6px;}
+
+.TextTab .main-tabcontent.active-font .font,.TextTab .main-tabcontent.active-font #updateBTN{ display: none;}
+.TextTab .addText {    width: 48%;}
+.TextTab .main-tabcontent .font{ width: 48%; float: right;}
+.TextTab .select-font{width: 100%;}
+.font-style li.right{margin-right: 0;}
+.single-font {
+    float: right;
+    width: 48%;
+}
+.TextTab .main-tabcontent.single-line .font {
+	width: 100%;
+	float: none;
+	/*overflow: hidden;*/
+}
+.ipod-bottom a.edit-design-color,.ipod-bottom a.order-info{ font-size: 12px; padding: 6px; color:#333;}
+
+#rsBar {position:static;}
+
+
+.ipod-bottom.openlist .edit-design-color{
+    bottom: 132px;
+    height: auto;
+    position: fixed;
+    top: auto;
+    z-index: 999;
+	display: block;
+}
+
+/*feedback form style */
+
+.feedback-form form{
+	 padding: 20px 10px 27px 10px;
+}
+.mandatory {
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+.form-group .text-box{
+	width:100%;
+	font-size:14px;
+}
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label, .form-group span {
+    font-size: 14px;
+}
+input[type="radio"] + label {
+    font-size: 12px;
+}
+.main-contentarea > p{
+	margin-left:0;
+}
+.submit-button > input{
+	font-size: 16px;
+    padding: 10px 40px;
+}
+input[type="radio"] + label span {
+    height: 12px; 
+    width: 12px;
+}
+[type="checkbox"]:not(:checked) + label::before, [type="checkbox"]:checked + label::before {
+    height: 12px;
+    width: 12px;
+}
+[type="checkbox"]:not(:checked) + label::after, [type="checkbox"]:checked + label::after{
+	font-size:14px;
+}
+
+}
+
+@media all and (max-width: 767px) and (min-width: 480px) {
+    
+}
+
+@media all and (max-width: 959px) and (min-width: 768px) {
+    #sBar{padding-bottom: 30px}
+    #sBarTabWidget .sBarTarget{ overflow: visible;}
+    #sBarTabWidget .sBarTarget .panel_cls{display: none;}
+    #sBarTabWidget .sBarTarget.block .panel_cls{display: block;}
+    
+    .TextTab .addText{ float: left;width: 48%;}
+    .TextTab .font{width: 48%}
+   
+    .clipart div.prodCat-option { box-sizing: border-box;  padding-right: 130px;}
+    .upload .upload-btn{ position: absolute;right: 11px;   top: 13px;}
+
+#pWrapper.product,#cWrapper {overflow: visible;position: static;width: 100%;}
+.bx-wrapper { position: static;}
+.bx-controls-direction {bottom: 10px; position: absolute; box-sizing: border-box;
+    padding-right: 122px;}
+
+
+.product li{
+    border: 1px solid #ada686;
+    background: White;
+    height: 130px;
+    overflow: hidden;
+}
+
+.product li a { line-height: 130px;display: block;overflow: hidden;height: 130px;
+    vertical-align: middle;}
+
+.product li img {
+    height: auto;
+    max-height: 128px;
+    max-width: 100%;
+    vertical-align: middle;
+    width: auto;
+}
+
+#layerWidget{top: 296px;}
+ .custom-order{top: 401px;}
+ 
+ .uploadContent .bx-controls-direction{padding-right: 0; bottom: 0;}
+ .upload-wrapper, .upload-detail{ border-radius: 0 10px 10px 0;}
+ 
+ .uploadContent { padding: 0 10px;}
+ .upload-wrapper #uWrapper{ padding-bottom: 25px;}
+ .upload-detail ul, .upload-photo ul {
+    padding: 0 0 0 20px;}
+ 
+ #handler, .viewport { top: 10%;}
+ 
+#layerWidget ul li.active strong,#layerWidget ul li strong{display: none;}
+#layerWidget ul li.active  a.delete,#layerWidget ul li a.delete{display: block ;margin: 0;height: 35px;width: 31px; background-position: center center;}
+
+.sBarTarget .panel_cls {
+font-size: 1.2em;
+}
+
+
+#designColorWidget{ position: static;}
+/* .morecolorbox{ bottom: 154px; z-index: 9999;} */
+.morecolorbox.slide_down{ overflow: auto; height: 98px; border-radius: 0;-moz-border-radius: 0px;-webkit-border-radius: 0px;}
+.productColorWidget .color-list{ height: 120px;}
+
+
+
+#designColorWidget a.morelink.morelink-close{  bottom: 117%;
+    display: block;
+    position: absolute;
+font-size: 10px; color: black; text-transform: uppercase;}
+.morecolorbox.slide_down{height: 117px;}
+
+/*feedback form style */
+.feedback-form form{
+	padding: 20px 30px 27px 30px;
+}
+.form-group .text-box{
+	width:100%;
+}
+
+
+}
+
+@media all and (max-width:1199px) and (min-width:960px) {
+.download-button {
+    position: absolute;
+    left:250px;
+    top:55px;
+    z-index: 99;
+}
+.previewShow{
+  margin-left: 25px;
+}
+.edit-area {
+    left: auto;
+    right: 32px;
+}
+
+/*feedback form style */
+.feedback-form form{
+	padding: 20px 30px 27px 30px;
+}
+	
+}
+
+
+
+
+
+@media all and (max-width: 480px) {
+
+.loading-content.loader1,.loading-content.loader2{
+    font-family: 'Roboto',sans-serif;
+    height: auto;
+    left: 0;
+    margin-left: 0;
+    position: absolute;
+    width:100%;
+}
+.morecolorbox:after{left: 20px;}
+
+}
+
+
+
+
+.how-to-use.watch-video {
+    background: url("../images/playvideo.png") no-repeat scroll left center transparent;
+}

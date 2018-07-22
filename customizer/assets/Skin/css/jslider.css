@@ -1,0 +1,152 @@
+.jslider {
+	display: block;
+	width: 100%;
+	height: 8px;
+	position: relative;
+	top: 0;
+}
+/*all slider*/
+  .jslider .jslider-bg i,  .jslider .jslider-pointer {
+	background:red;
+}
+.jslider .jslider-bg {
+	position: relative;
+}
+.jslider .jslider-bg i {
+	height: 8px;
+	position: absolute;
+	font-size: 0;
+	top: 0;
+}
+.jslider .jslider-bg .l {
+	background: #706E68;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#706E68), to(#494843));
+	background: -webkit-linear-gradient(#706E68, #494843);
+	background: -moz-linear-gradient(#706E68, #494843);
+	background: -ms-linear-gradient(#706E68, #494843);
+	background: -o-linear-gradient(#706E68, #494843);
+	background: linear-gradient(#706E68, #494843);
+	-pie-background: linear-gradient(#706E68, #494843);
+	behavior: url(PIE.htc);
+	border-radius:6px;
+	width:100%;
+	border:1px solid #aba78d;
+	left:0px;
+}
+.jslider .jslider-bg .r {
+	width: 50%;
+	left: 50%;
+	background:black;
+	display:none;
+}
+.jslider .jslider-bg .v {
+	position: absolute;
+	width: 100%;
+	left:auto; /*right:-1px;  */
+	height: 8px;
+	top:0px; /*margin:1px 0 0 1px;*/
+	margin-top:1px;
+	left:auto!important;
+	right:-1px;
+	border-radius:6px;
+	background: #EDE9DE;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#EDE9DE), to(#d5d0b2));
+	background: -webkit-linear-gradient(#EDE9DE, #d5d0b2);
+	background: -moz-linear-gradient(#EDE9DE, #d5d0b2);
+	background: -ms-linear-gradient(#EDE9DE, #d5d0b2);
+	background: -o-linear-gradient(#EDE9DE, #d5d0b2);
+	background: linear-gradient(#EDE9DE, #d5d0b2);
+	-pie-background: linear-gradient(#EDE9DE, #d5d0b2);
+	behavior: url(PIE.htc);
+}
+/*left*/
+  .jslider .jslider-pointer {
+	border: 1px solid #A49F87;
+	top: -4px;
+	margin-left:-12px;
+	width:17px;
+	height:17px;
+	border-radius:9px;
+	cursor:pointer;
+	box-shadow:0px 0px 2px #b7b5aa;
+	position: absolute;
+	z-index: 2;
+	background: #f2f0e8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f2f0e8), to(#d4cfb1));
+	background: -webkit-linear-gradient(#f2f0e8, #d4cfb1);
+	background: -moz-linear-gradient(#f2f0e8, #d4cfb1);
+	background: -ms-linear-gradient(#f2f0e8, #d4cfb1);
+	background: -o-linear-gradient(#f2f0e8, #d4cfb1);
+	background: linear-gradient(#f2f0e8, #d4cfb1);
+	-pie-background: linear-gradient(#f2f0e8, #d4cfb1);
+	behavior: url(PIE.htc);
+}
+.jslider .jslider-pointer:hover {
+	background: #f2f0e8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d4cfb1), to(#f2f0e8));
+	background: -webkit-linear-gradient(#d4cfb1, #f2f0e8);
+	background: -moz-linear-gradient(#d4cfb1, #f2f0e8);
+	background: -ms-linear-gradient(#d4cfb1, #f2f0e8);
+	background: -o-linear-gradient(#d4cfb1, #f2f0e8);
+	background: linear-gradient(#d4cfb1, #f2f0e8);
+	-pie-background: linear-gradient(#d4cfb1, #f2f0e8);
+	behavior: url(PIE.htc);
+}
+/*btn hover*/
+  .jslider .jslider-pointer-hover {
+	background: #f2f0e8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d4cfb1), to(#f2f0e8));
+	background: -webkit-linear-gradient(#d4cfb1, #f2f0e8);
+	background: -moz-linear-gradient(#d4cfb1, #f2f0e8);
+	background: -ms-linear-gradient(#d4cfb1, #f2f0e8);
+	background: -o-linear-gradient(#d4cfb1, #f2f0e8);
+	background: linear-gradient(#d4cfb1, #f2f0e8);
+	-pie-background: linear-gradient(#d4cfb1, #f2f0e8);
+	behavior: url(PIE.htc);
+}
+/*right*/
+  .jslider .jslider-pointer-to {/* left: auto !important; right:0px !important; display:none !important;*/
+	background:none;
+	border:0px;
+	box-shadow:none;
+}
+/*LEFT*/
+  .jslider .jslider-label {
+	white-space: nowrap;
+	position: absolute;
+	top: 18px;
+	left: 0px;
+	border:1px solid blue;
+	display:none !important;
+}
+/*RIGHT*/
+  .jslider .jslider-label-to {
+	left: auto;
+	right: 0;
+	border:1px solid blue;
+}
+/*LEFT*/
+  .jslider .jslider-value {
+	white-space: nowrap;
+	position: absolute;
+	top: 19px;
+	left: 20%;
+	background: #F00;
+	border:3px solid green;
+	display:none !important;
+}
+/*RIGHT*/  
+  .jslider .jslider-value-to {
+	left: 80%;
+	border:3px solid blue;
+	display:none !important;
+}
+.jslider .jslider-scale {
+	display:none;
+}
+.adjust-shape .jslider .jslider-pointer strong {
+	_background:url("../images/arrow-left-right.png") no-repeat scroll center center transparent;
+	width:17px;
+	height:17px;
+	display:block;
+}

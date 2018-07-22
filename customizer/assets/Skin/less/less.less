@@ -1,0 +1,771 @@
+/*
+1: Color
+	1.1: redAncorColor
+	1.2: sBarBtn
+	1.3: text
+	1.4: FormFields
+	1.5: Theme
+	1.6: BorderColor
+	1.7: AddToCart
+	1.8: GrayBox
+	1.9: HowToUseText
+2: UPPERCASE
+3: BORDER RADIUS
+4: BOXSHADOW
+5: TRANSITION
+6: TRANSFORM
+7: GRADIENT
+8: BORDER
+9: Input Type Text
+10: Input Type Button
+11: Textarea
+12: H2
+13: Button
+14: Select
+15:	Sidebar
+	15.1: Sidebar Btn
+	15.2: Sidebar Tab Panel Start Here
+	15.3: Sidebar Tab Target Start Here
+	15.4: Clipart Product
+	15.5: Product Tab
+	15.6: Text Tab
+16: Product Color pallete Start Here
+17: Product Thumbnail Start Here
+18: Product Size Start Here
+19: Product Price Start Here
+20: Social Icon Start Here
+21: Layer Panel Start Here
+22: Product Design Editor Start Here
+23: Language Panel
+24: How To Use
+25: SelectStyle
+26: Shipping Cart
+27: IPOD
+28: LIGHTBOX
+29: CLIPART TAB IN IPOD
+*/
+
+
+
+//Color
+@White: #FFF;
+@Black:#000;
+@darkgray:#62615c;
+
+//redAncorColor
+@aColor:#B5000B;
+
+//sBarBtn
+@GrayBtn:#93989e;
+@RedBtn:#fe7877;
+
+//text
+@GrayText:#c8c8c8;
+@BlackText:#000;
+@WhiteText:#fff;
+
+//FormFields
+@selectBox:#E2DFCE;
+@inputText:#E2DFCE;
+@button:#484843;
+
+//Theme
+@Theme:#E2DFCE;
+
+//BorderColor
+@BorderColor:#ada686;
+@FocusBorder:#43508e;
+
+//AddToCart
+@AddToCart:#28305f;
+
+//GrayBox
+@GrayBox:#e4e4e4;
+
+//HowToUseText
+@HowToUseText:#4C4B3E;
+
+//yellow alert background
+@yellowbg:#f7f4c1;
+
+//UPPERCASE
+.textTransform (@uppercase: uppercase) {
+    text-transform: @uppercase;
+}
+//BORDER RADIUS
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+}
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+    -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+//BOXSHADOW
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.inset(@inset:inset, @x: 0px, @y: -5px, @blur: 0, @co: #fd4949, @bx: 0px, @by: 1px, @bblur: 2px, @alpha: 0.5){
+	-webkit-box-shadow:@inset @x @y @blur @co, @bx @by @bblur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:@inset @x @y @blur @co, @bx @by @bblur rgba(0, 0, 0, @alpha);
+	box-shadow:@inset @x @y @blur @co, @bx @by @bblur rgba(0, 0, 0, @alpha);}
+	
+.insetHover(@inset:inset, @x: 0px, @y: -3px, @blur: 0, @co: #fd4949, @bx: 0px, @by: 1px, @bblur: 2px, @alpha: 0.5){
+	-webkit-box-shadow:@inset @x @y @blur @co, @bx @by @bblur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow:@inset @x @y @blur @co, @bx @by @bblur rgba(0, 0, 0, @alpha);
+	box-shadow:@inset @x @y @blur @co, @bx @by @bblur rgba(0, 0, 0, @alpha);}
+
+//TRANSITION
+.transition (@prop: all, @time: .2s, @ease: ease-in-out) {
+    -webkit-transition: @prop @time @ease;
+    -moz-transition: @prop @time @ease;
+    -o-transition: @prop @time @ease;
+    -ms-transition: @prop @time @ease;
+    transition: @prop @time @ease;
+}
+
+//TRANSFORM
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+    -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+    transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+//GRADIENT
+.gradient (@start: #ffffff, @stop: #000000) {	
+	background: @start;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(@start), to(@stop));
+	background: -webkit-linear-gradient(@start, @stop);
+	background: -moz-linear-gradient(@start, @stop);
+	background: -ms-linear-gradient(@start, @stop);
+	background: -o-linear-gradient(@start, @stop);
+	background: linear-gradient(@start, @stop);
+	-pie-background: linear-gradient(@start, @stop);
+}
+
+//BORDER
+.border(@width:1px,@style:solid,@color:#d4d4d4){
+	border:@width @style @color;
+}
+
+//Input Type Text
+input[type=text]{
+	font:400 14px/23px 'Roboto', sans-serif;
+    border:1px solid @BorderColor;
+    .gradient(lighten(@inputText, 1%), @White);
+    .border-radius(3px);
+    .inset(inset, 1px, 2px, 2px, desaturate(@inputText, 50%), 0, 0, 0px, .5);  
+    padding:5px;
+    .transition();
+    &:focus{
+      border-color:@FocusBorder;
+    }
+}
+
+//Input Type Button
+input[type=button]{
+    .gradient(lighten(@button, 10%), @button); 
+    .border-radius(); 
+    color:@White;
+    border:1px solid darken(@button, 10%);
+    &:hover{
+    .gradient(@button, lighten(@button, 10%)); 
+    }
+}
+//Textarea
+.textarea-wrapper{
+  background-color:lighten(@Theme, 10%);
+  border:1px solid darken(@BorderColor, 10%);
+  .border-radius(5px);
+  color:@Black;
+  .inset(inset, 1px, 3px, 5px, desaturate(@Theme, 50%), 0, 0, 0px, .5);  
+}
+//H2
+h2 {
+    color: @Black;
+    font: 1.4em/16px "Chaparral Pro";
+    padding: 0 0 8px;
+    text-align: left;
+    .textTransform();
+}
+// Button
+button{
+    .gradient(lighten(@button, 10%), @button); 
+    border:1px solid darken(@button, 10%);
+    .border-radius(8px);
+    color:@White;
+    .transition(); 
+  &:hover{
+    .gradient(@button, lighten(@button, 10%)); 
+  }
+}
+
+.upload-photo-btn{
+  .gradient(lighten(@button, 10%), @button); 
+    border:1px solid darken(@button, 10%);
+    .border-radius(8px);
+    color:@White;
+       font: 400 1.4em/34px 'Roboto', sans-serif;
+    padding: 0 12px;
+    word-spacing: 1px;
+    display:inline-block;
+    .transition(); 
+  &:hover{
+    .gradient(@button, lighten(@button, 10%)); 
+  }
+}
+//Select
+select{
+  .border-radius(8px);
+  border:1px solid @BorderColor;
+  //.gradient(@Theme + #111, desaturate(@Theme, 20%));
+  .gradient(lighten(@selectBox, 10%), @selectBox);
+  margin-bottom:12px;
+}
+.sbHolder{
+   .border-radius(8px);
+  border:1px solid @BorderColor;
+  //.gradient(@Theme + #111, desaturate(@Theme, 20%));
+  .gradient(lighten(@selectBox, 10%), @selectBox);
+  margin-bottom:4px;
+  height: 36px;
+	width: 100%;
+	padding:0;
+	box-shadow:none;
+}
+.sbOptions{
+   .gradient(lighten(@selectBox, 10%), @selectBox);
+    border:1px solid @BorderColor;
+     .border-radius(8px);
+}
+.sbOptions a{
+   border-bottom:1px solid @BorderColor;
+}
+//Sidebar Btn
+#sBarBtn{ 
+  a{
+    .border-radius(10px);
+    color:@White;
+    .gradient(lighten(@GrayBtn, 10%), @GrayBtn);
+    .textTransform();
+	  .transition();
+    .inset(inset, 0, -5px, 0px, darken(@GrayBtn, 18%), 0, 0, 2px, .5);
+    &:hover{
+      .insetHover(inset, 0, -3px, 0px, darken(@GrayBtn, 18%), 0, 0, 2px, .5);
+    }
+	&.sBarRedBtn{
+	float:right;
+    .gradient(lighten(@RedBtn, 10%), @RedBtn);
+    .inset(inset, 0, -5px, 0px, darken(@RedBtn, 18%), 0, 0, 2px, .5);	
+    &:hover{
+      .insetHover(inset, 0, -3px, 0px, darken(@RedBtn, 18%), 0, 0, 2px, .5);
+    }
+	}
+  }
+}
+
+
+//Sidebar Tab Panel Start Here
+#sBarTabWidget{border:1px solid @BorderColor;
+.border-radius-custom( 10px, 10px, 10px, 10px);
+  #sBarTabs{
+    .border-radius-custom(10px, 0, 0, 0);
+    &.active{
+      .border-radius-custom(0px, 0, 0, 0);
+    }
+    li{
+    .gradient( white, lighten(@GrayBox, 0%));
+	 &.active:after{border-left: 9px solid darken(@BorderColor,30%);}
+	 &.active:before{border-right: 9px solid darken(@BorderColor,30%);}
+    a{
+      .textTransform();
+      color:darken(@GrayBox, 20%);
+    border-color: @BorderColor;
+	  }
+    &.products a{
+      background-position: -87px -2px;
+    }
+    &.text a{
+      background-position: -179px -112px;
+    }
+    &.last{
+      .border-radius-custom(0, 10px, 0, 0);
+	  border-color: @BorderColor;
+      span{
+       
+      }
+	 &.last.active{
+	 .border-radius-custom(0, 0, 0, 0);
+	 }
+    }
+    &.first{
+      .border-radius-custom(10px, 0, 0, 0);
+	  border-color: @BorderColor;
+	  span{
+	   
+	  }
+    }
+	&.first.active{
+	 .border-radius-custom(0, 0, 0, 0);
+	 }
+    &.active{
+      .border-radius-custom(0, 0, 0, 0);
+	  border-color:@BorderColor;
+      span{
+        display:block;
+      }
+      a{
+        background-position:13px -222px;
+        font-weight:bold;
+        color:@Black;
+      }
+      &.products a{
+        background-position: -87px -112px;
+      }
+      &.text a{
+        background-position: -179px -2px;
+      }
+    }
+    }
+  }
+//Sidebar Tab Target Start Here
+.sBarTarget{
+   //border:1px solid @BorderColor;
+   //border-top:0px;
+   //.border-radius-custom(0, 0, 10px, 10px); 
+ 
+}
+}
+
+//Clipart Product
+.upload-container{
+   //.gradient(lighten(@Theme, 10%), lighten(@Theme, 5%));
+  //border:1px solid darken(@BorderColor, 10%);
+}
+.product{ 
+  //.gradient(lighten(@Theme, 10%), lighten(@Theme, 5%));
+  //border:1px solid darken(@BorderColor, 10%);
+  //background:@White;
+   
+  .prev{
+    color:@Black;
+    .textTransform();
+    &.active{
+      background-position: 0 -56px;
+    }
+    &:hover{
+      background-position: 0 -76px;
+    }
+  }
+  .next{
+    &.active{
+       background-position: right 4px;
+    }
+    &:hover{
+       background-position: right -16px;
+    }
+  }
+  li{
+    li{
+	  border:1px solid @BorderColor;
+	  &.active{border-color:@FocusBorder;
+	  a{border-color:@FocusBorder;}
+	  }
+      &:hover{ border-color:@FocusBorder;	  
+      a{
+	  border-color:@FocusBorder;
+      }
+
+    }
+  }
+    
+}
+}
+.collapse{
+color:@Black;
+}
+//Product Tab
+
+// Text Tab
+.font{
+  color:@Black;
+}
+.font-style{
+  li{
+    background:desaturate(darken(@Theme, 20%), 50%);
+    border:1px solid darken(@BorderColor, 20%);
+    .border-radius(3px);
+    .inset(inset, 2px, 2px, 3px, desaturate(@Theme, 50%), 0, 0, 0px, .5);  
+    color:lighten(@Black, 30%);
+    &.active{
+      background:lighten(@Theme, 10%);
+      color:@Black;
+      border:1px solid @FocusBorder;
+    }
+	&:hover{
+    background:desaturate(darken(@Theme, 20%), 20%);
+	}
+  }
+}
+.font-detail{
+	 border:1px solid darken(@Theme, 20%);
+	 .border-radius(3);
+	 //.box-shadow(2px ,2px ,3px,.9);
+}
+
+.shape{
+  li{
+    .gradient(lighten(@Theme, 10%), @Theme);
+    .border-radius(3px);
+    border:1px solid darken(@BorderColor, 10%);
+	&:hover{
+    .gradient(@Theme,lighten(@Theme, 10%));
+	}
+  }
+}
+
+//Product Color pallete Start Here
+.productColorWidget{
+  color:@Black;
+  .textTransform();
+  li{
+      .border-radius();
+    &.active:before{
+      .border-radius();
+      border:2px solid @FocusBorder;
+    }
+  }
+}
+//Product Thumbnail Start Here
+.direction-link{
+color:@aColor;
+	span{
+		background-color:@GrayBox;
+	}
+}
+#productThumb{
+  li{
+    //.gradient(white, lighten(@GrayBox, 0%)); 
+    border:1px solid @BorderColor - #222;
+    &:hover{
+    //  .gradient(lighten(@GrayBox, 0%), white); 
+    }
+    &.active{
+     // .gradient(white, lighten(@GrayBox, 100%)); 
+      border-color:@FocusBorder;
+    }
+    span{
+      color:@Black;
+      .textTransform;
+    }
+  }
+}
+//Product Size Start Here
+#productSize{
+  label{
+    color:@BlackText;
+  }
+ /* a{
+    .border-radius();
+    border:1px solid @Theme - #222;
+    color:@BlackText;
+    .gradient(lighten(@Theme, 10%), @Theme);
+    &.active{
+      border-color:@FocusBorder;
+    }
+	&:hover{
+	.gradient(@Theme, lighten(@Theme, 10%));
+	}
+  }*/
+}
+//Product Price Start Here
+.productPrice{
+  .addCartBtn{
+    color:@White;
+    .textTransform();
+    .gradient(lighten(@AddToCart, 30%), @AddToCart);
+    .border-radius(10px);
+    .inset(inset, 0, -6px, 0px, darken(@AddToCart, 18%), 0, 0, 2px, .5);
+    &:hover{
+      .gradient(@AddToCart, lighten(@AddToCart, 30%));
+      .inset(inset, 0, -3px, 0px, darken(@AddToCart, 18%), 0, 0, 2px, .5);
+    }
+  }
+  span{
+    color:@Black;
+    small{
+      color:@White - #888;
+    }
+  }
+  label{
+  	color:@Black;
+  }
+}
+//Social Icon Start Here
+.socialWidget{
+  background:@White;
+  border:1px solid @BorderColor;
+  color:@Black;
+  span{
+    float:left;
+  }
+    ul{
+        float: left;
+    padding-top: 3px;
+    li{
+        float: left;
+    margin-left: 16px;
+    a{
+       display: block;
+    line-height: normal;
+    }
+    }
+    }
+}
+//Layer Panel Start Here
+.layerHeading{
+  .gradient(lighten(@button, 20%), @button);
+  .border-radius-custom(10px, 10px, 0, 0);
+  small{
+    color:@White;
+    .textTransform();
+  }
+}
+#layerWidget{
+  ul{
+  .gradient(lighten(@Theme, 10%), darken(@Theme, 10%));
+  border:1px solid @BorderColor;
+  .border-radius-custom(0, 0, 10px, 10px);
+  li{
+    .gradient(lighten(@Theme, 10%), lighten(@Theme, 15%));
+    border:1px solid @BorderColor;
+    span{
+      background:@White;
+      border:1px solid @BorderColor;
+    }
+      small{
+        color:@Black;
+      }
+      strong{
+        border-left: 2px groove darken(@Theme, 10%);
+      }
+      a.top{
+         border-bottom: 2px groove darken(@Theme, 10%);
+      }
+      &.active{
+        border:2px solid lighten(@FocusBorder, 5%);
+        padding:0px;
+        .gradient(lighten(@Theme, 10%), darken(@Theme, 10%));
+        
+        a.delete{
+          display:block;
+        }
+      }
+  }
+  }
+}
+//Product Design Editor Start Here
+#designEditor{
+  border:1px solid @BorderColor - #333; 
+  .border-radius(10px);
+}
+#designColorWidget{
+  color:@darkgray;
+  span{
+    display:block;
+    text-align:left;
+	letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  li{
+    .border-radius(3px);
+  }
+  a{
+    color:@darkgray;
+    &:hover{
+      text-decoration:none;
+    }
+  }
+}
+.clipartRotator{
+  li{
+    .gradient(lighten(@Theme, 10%), darken(@Theme, 10%));
+    .border-radius(3px);
+    border:1px solid darken(@BorderColor, 20%);
+    &:hover{
+      .gradient(darken(@Theme, 10%), lighten(@Theme, 10%));
+    }
+  }
+}
+.position-handler{
+  .position{
+    .gradient(lighten(@Theme, 10%), darken(@Theme, 10%));
+    .border-radius(11px);
+    border:1px solid darken(@BorderColor, 20%);
+    .box-shadow(0, 0, 1px, .5);
+    &.left{
+      left: 0;
+      top: 28px;
+    }
+    &.top{
+      left: 23px;
+      top: 6px;
+    }
+    &.right{
+    left: auto;
+    right: 2px;
+    top: 28px;
+    }
+    &.bottom{
+    bottom: 5px;
+    left: 23px;
+    top: auto;
+    }
+    &:hover{
+    .gradient(darken(@Theme, 10%), lighten(@Theme, 10%));
+    }
+  }
+}
+.degree{
+  span{
+    color:@darkgray;
+  }
+  input[type=text]{
+    .border-radius(3px);
+  }
+}
+
+
+//Language Panel
+#language{
+  .language{
+    color:@Black;
+  }
+}
+.how-to-use{
+    color:@Black;
+    &:hover{
+      text-decoration:none;
+    }
+}
+.top-text-panel{
+  dfn{
+    color:@GrayText;
+  }
+}
+//How To Use
+.how-use{
+  color:@HowToUseText;
+  background:@yellowbg;
+  .border-radius(8px);
+  .inset(inset, 0, 0px, 20px, @Theme - #222, 0, 0, 0px, .5);
+  .how-to-use{
+    &.close{
+      background:none;
+    }
+	&.watch-video{ background: none; float: right; text-decoration: underline; padding-left:0;}
+  }
+  
+  &.msg{
+  	p{
+		color:@Black;
+	}
+  }
+}
+
+
+//SelectStyle
+.size-drop{
+    .gradient(lighten(@inputText, 10%), @inputText);
+	color:@Black;
+	border:1px solid @BorderColor;
+	.border-radius(8px);
+	span{
+		border-left:1px solid  @BorderColor;
+		.border-radius-custom(0px, 8px, 0px, 8px)
+	}
+}
+
+//Shipping Cart
+.ShoppingCart{
+	.border-radius(10px);
+	ul.option-btn{
+		li{
+			a{
+				.gradient(lighten(@GrayBox, 10%), @GrayBox);
+				.border-radius(5px);
+				border:1px solid @BorderColor;
+				.transition;
+				color:@Black;
+			}	
+			&.check-out a{
+				.gradient(lighten(@AddToCart, 30%), @AddToCart); 
+				.inset(inset, 0, -3px, 0px, darken(@AddToCart, 18%), 0, 0, 2px, .5);
+				color:@White;
+				border:0px;
+				&:hover{
+				.gradient(@AddToCart, lighten(@AddToCart, 30%));
+				.inset(inset, 0, -0px, 0px, darken(@AddToCart, 18%), 0, 0, 2px, .5);
+				}
+			}
+		}
+	}
+}
+
+ 
+ 
+//IPOD
+
+.ipod-bottom{
+	a{
+		color:@Black;
+	}
+}
+
+.tool-click{
+	span{
+		color:@White;
+	}
+}
+
+//LIGHTBOX
+.ShoppingCart {
+	h3{
+		color:@Black;	
+	}
+	span{
+		color:@Black;
+	}
+}
+
+//CLIPART TAB IN IPOD
+.i-pod-tab{
+	.border-radius(10px);
+	border:1px solid @BorderColor;
+}
+#cliparts {
+	.product {
+		ul{
+			background:@White;
+			border:1px solid @BorderColor;		
+		}
+	}
+}
+
+//
+
+.open-icon{
+  //.gradient(lighten(@Theme, 10%), darken(@Theme, 10%));
+  //.border-radius(32px);
+  //border:1px solid darken(@BorderColor, 20%);
+ // .box-shadow(0, 0, 1px, .5);
+ // color:@Black;
+}
+
+
