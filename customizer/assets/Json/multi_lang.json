@@ -1,0 +1,35 @@
+[
+	{
+		"lang": "English",
+		"flag": "assets/Skin/images/flag/English.jpg",
+		"lang_short" : "en"
+	}, {
+		"lang": "Portuguese",
+		"flag": "assets/Skin/images/flag/Portuguese.png",
+		"lang_short" : "pt"
+	}, {
+		"lang": "French",
+		"flag": "assets/Skin/images/flag/French.png",
+		"lang_short" : "fr"
+	}, {
+		"lang": "Spanish",
+		"flag": "assets/Skin/images/flag/Spanish.png",
+		"lang_short" : "sp"
+	}, {
+		"lang": "German",
+		"flag": "assets/Skin/images/flag/German.png",
+		"lang_short" : "gr"
+	}, {
+		"lang": "Japanese",
+		"flag": "assets/Skin/images/flag/Japanese.png",
+		"lang_short" : "jp"
+	}, {
+		"lang": "Russian",
+		"flag": "assets/Skin/images/flag/Russian.png",
+		"lang_short" : "rs"
+	}, {
+		"lang": "Arabic",
+		"flag": "assets/Skin/images/flag/Arabic.png",
+		"lang_short" : "ab"
+	}
+]

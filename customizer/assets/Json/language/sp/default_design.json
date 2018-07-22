@@ -1,0 +1,75 @@
+[
+	{
+		"Type": "text",
+		"Text_Name": "texto",
+		"font_family": "Shadows Into Light",
+		"PostionX": "20",
+		"PostionY": "10",
+		"scale": "0.6",
+		"rotate": "0",
+		"bold" : false
+	},{
+		"Type": "text",
+		"Text_Name": "Haga clic para editar",
+		"font_family": "Lora",
+		"PostionX": "80",
+		"PostionY": "40",
+		"scale": "0.6",
+		"rotate": "0",
+		"bold" : false
+	},{
+		"Type": "text",
+		"Text_Name": "TEXTO",
+		"font_family": "Lora",
+		"PostionX": "80",
+		"PostionY": "70",
+		"scale": "0.8",
+		"rotate": "0",
+		"bold" : true
+	},{
+		"Type": "text",
+		"Text_Name": "y",
+		"font_family": "Lora",
+		"PostionX": "80",
+		"PostionY": "100",
+		"scale": "0.8",
+		"rotate": "0",
+		"bold" : false
+	},{
+		"Type": "text",
+		"Text_Name": "diseño",
+		"font_family": "Shadows Into Light",
+		"PostionX": "30",
+		"PostionY": "220",
+		"scale": "0.7",
+		"rotate": "349",
+		"bold" : false
+	}, {
+		"Type": "svg",
+		"SVG_Path": "assets/Customizer_Images/Clipart/svg/46.svg",
+		"clipPrice": "5",
+		"colorAble": "true",
+		"PostionX": "80",
+		"PostionY": "150",
+		"scale": "0.4",
+		"rotate": "0"
+	}, {
+		"Type": "svg",
+		"SVG_Path": "assets/Customizer_Images/Clipart/svg/redo.svg",
+		"clipPrice": "5",
+		"colorAble": "true",
+		"PostionX": "45",
+		"PostionY": "15",
+		"scale": "0.3",
+		"rotate": "90"
+	}, {
+		"Type": "svg",
+		"SVG_Path": "assets/Customizer_Images/Clipart/svg/undo.svg",
+		"clipPrice": "5",
+		"colorAble": "true",
+		"PostionX": "65",
+		"PostionY": "210",
+		"scale": "0.5",
+		"rotate": "76"
+	}
+]

@@ -1,0 +1,124 @@
+[
+	{
+		"design": [
+			{
+				"category": [
+					{
+						"id": "6",
+						"title": "Antique Style",
+						"label": "Antique Style",
+						"isDefault": "6",
+						"subcategory": [
+							{
+								"id": "8",
+								"title": "Household",
+								"label": "Household",
+								"isDefault": "8",
+								"clipart": [
+									{
+										"id": "13",
+										"title": "Broom",
+										"label": "Broom",
+										"image": "assets/Customizer_Images/Clipart/png/1.png",
+										"colorable": "true",
+										"height": 371,
+										"width": 100,
+										"price": 5
+									}
+								]
+							}, {
+								"id": "9",
+								"title": "Miscellaneous",
+								"label": "Miscellaneous",
+								"clipart": [
+									{
+										"id": "14",
+										"title": "Bullet",
+										"label": "Bullet",
+										"image": "assets/Customizer_Images/Clipart/png/130.png",
+										"price": 12,
+										"colorable": "false",
+										"height": 92,
+										"width": 280
+									}
+								]
+							}, {
+								"id": "10",
+								"title": "Plants and Flowers",
+								"label": "Plants and Flowers",
+								"clipart": [
+									{
+										"id": "15",
+										"title": "Palm Trees at Night",
+										"label": "Palm Trees at Night",
+										"image": "assets/Customizer_Images/Clipart/png/43.png",
+										"price": 6,
+										"colorable": "true",
+										"height": 301,
+										"width": 330
+									}
+								]
+							}
+						]
+					}, {
+						"id": "7",
+						"title": "Art and Design",
+						"label": "Art and Design",
+						"subcategory": [
+							{
+								"id": "11",
+								"title": "Crafts",
+								"label": "Crafts",
+								"isDefault": "11",
+								"clipart": [
+									{
+										"id": "16",
+										"title": "Dying Thread",
+										"label": "Dying Thread",
+										"image": "assets/Customizer_Images/Clipart/png/49.png",
+										"price": 6,
+										"colorable": "true",
+										"height": 202,
+										"width": 216
+									}
+								]
+							}, {
+								"id": "12",
+								"title": "Cave Art",
+								"label": "Cave Art",
+								"clipart": [
+									{
+										"id": "18",
+										"title": "Animal Leaping",
+										"label": "Animal Leaping",
+										"image": "assets/Customizer_Images/Clipart/png/96.png",
+										"price": 6,
+										"colorable": "true",
+										"height": 87,
+										"width": 204
+									}
+								]
+							}, {
+								"id": "56",
+								"title": "Arrows",
+								"label": "Arrows",
+								"clipart": [
+									{
+										"id": "18",
+										"title": "Arrow Right",
+										"label": "Arrow Right",
+										"image": "assets/Customizer_Images/Clipart/png/arrow-right.png",
+										"price": 6,
+										"colorable": "true",
+										"height": 87,
+										"width": 204
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

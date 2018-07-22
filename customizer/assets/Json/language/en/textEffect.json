@@ -1,0 +1,18 @@
+{
+	"textEffectControlShow":"true",
+	"defaultSelectedText":"single line",
+	"textEffect":[
+		{
+			"thumb":"assets/Customizer_Images/texteffect/straight.png",
+			"effectType":"straight"
+		},
+		{
+			"thumb":"assets/Customizer_Images/texteffect/slanted.png",
+			"effectType":"slanted"
+		},
+		{
+			"thumb":"assets/Customizer_Images/texteffect/curve.png",
+			"effectType":"curve"
+		}
+	]
+}

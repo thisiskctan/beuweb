@@ -1,0 +1,35 @@
+{
+	"textEffectControlShow":"true",
+	"defaultSelectedText":"single line",
+	"textEffect":[
+		{
+			"thumb":"assets/Customizer_Images/texteffect/straight.png",
+			"effectType":"straight"
+		},
+		{
+			"thumb":"assets/Customizer_Images/texteffect/arch.png",
+			"effectType":"arch"
+		},
+		{
+			"thumb":"assets/Customizer_Images/texteffect/outline.png",
+			"effectType":"outline"
+		},
+		{
+			"thumb":"assets/Customizer_Images/texteffect/bridge.png",
+			"effectType":"bridge"
+		},
+		
+		{
+			"thumb":"assets/Customizer_Images/texteffect/slanted.png",
+			"effectType":"slanted"
+		},
+		{
+			"thumb":"assets/Customizer_Images/texteffect/curve.png",
+			"effectType":"curve"
+		},
+		{
+			"thumb":"assets/Customizer_Images/texteffect/bulge.png",
+			"effectType":"bulge"
+		}
+	]
+}

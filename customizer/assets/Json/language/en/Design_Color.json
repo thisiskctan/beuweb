@@ -1,0 +1,52 @@
+[
+	{
+		"isDefault": "2",
+		"id": "1",
+		"title": "Color-1",
+		"value": "#FAFAFA"
+	}, {
+		"id": "2",
+		"title": "Color-2",
+		"value": "#808080"
+	}, {
+		"id": "3",
+		"title": "Color-3",
+		"value": "#373737"
+	}, {
+		"id": "4",
+		"title": "Color-4",
+		"value": "#28231D"
+	}, {
+		"id": "5",
+		"title": "Color-5",
+		"value": "#FE5BAC"
+	}, {
+		"id": "6",
+		"title": "Color-6",
+		"value": "#C21807"
+	}, {
+		"id": "7",
+		"title": "Color-7",
+		"value": "#FD6A02"
+	}, {
+		"id": "8",
+		"title": "Color-8",
+		"value": "#FFD300"
+	}, {
+		"id": "9",
+		"title": "Color-9",
+		"value": "#0B6623"
+	}, {
+		"id": "10",
+		"title": "Color-10",
+		"value": "#7EF9FF"
+	}, {
+		"id": "11",
+		"title": "Color-11",
+		"value": "#0080FE"
+	}, {
+		"id": "12",
+		"title": "Color-12",
+		"value": "#604C8D"
+	}
+]

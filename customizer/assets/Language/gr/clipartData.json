@@ -1,0 +1,538 @@
+[{
+	"design" : [{
+		"category" : [{
+			"id" : "6",
+			"title" : "Antike Art",
+			"label" : "Antike Art",
+			"isDefault" : "6",
+			"subcategory" : [{
+				"id" : "8",
+				"title" : "Haushalt",
+				"label" : "Haushalt",
+				"isDefault" : "8",
+				"clipart" : [{
+					"id" : "13",
+					"title" : "Broom",
+					"label" : "Broom",
+					"image" : "assets/Customizer_Images/Clipart/png/1.png",
+					"colorable" : "true",
+					"height" : 371,
+					"width" : 100,
+					"price" : 5
+				}, {
+					"id" : "24",
+					"title" : "Alcohol Lamp",
+					"label" : "Alcohol Lamp",
+					"image" : "assets/Customizer_Images/Clipart/png/123.png",
+					"price" : 15,
+					"colorable" : "true",
+					"height" : 268,
+					"width" : 231
+				}, {
+					"id" : "25",
+					"title" : "Ashtray 1",
+					"label" : "Ashtray 1",
+					"image" : "assets/Customizer_Images/Clipart/png/4.png",
+					"price" : 2,
+					"colorable" : "false",
+					"height" : 142,
+					"width" : 130
+				}, {
+					"id" : "26",
+					"title" : "Ashtray 2",
+					"label" : "Ashtray 2",
+					"image" : "assets/Customizer_Images/Clipart/png/5.png",
+					"price" : 12,
+					"colorable" : "true",
+					"height" : 151,
+					"width" : 117
+				}, {
+					"id" : "27",
+					"title" : "Ashtray 3",
+					"label" : "Ashtray 3",
+					"image" : "assets/Customizer_Images/Clipart/png/6.png",
+					"price" : 11,
+					"colorable" : "true",
+					"height" : 127,
+					"width" : 265
+				}, {
+					"id" : "28",
+					"title" : "Ashtrays",
+					"label" : "Ashtrays",
+					"image" : "assets/Customizer_Images/Clipart/png/8.png",
+					"price" : 8,
+					"colorable" : "false",
+					"height" : 122,
+					"width" : 229
+				}, {
+					"id" : "29",
+					"title" : "Bathtub",
+					"label" : "Bathtub",
+					"image" : "assets/Customizer_Images/Clipart/png/12.png",
+					"price" : 5,
+					"colorable" : "true",
+					"height" : 287,
+					"width" : 350
+				}, {
+					"id" : "30",
+					"title" : "Bed Frame 1",
+					"label" : "Bed Frame 1",
+					"image" : "assets/Customizer_Images/Clipart/png/13.png",
+					"price" : 2,
+					"colorable" : "true",
+					"height" : 239,
+					"width" : 435
+				}, {
+					"id" : "31",
+					"title" : "Bed Frame 2",
+					"label" : "Bed Frame 2",
+					"image" : "assets/Customizer_Images/Clipart/png/14.png",
+					"price" : 20,
+					"colorable" : "true",
+					"height" : 307,
+					"width" : 304
+				}, {
+					"id" : "32",
+					"title" : "Beer",
+					"label" : "Beer",
+					"image" : "assets/Customizer_Images/Clipart/png/17.png",
+					"price" : 3,
+					"colorable" : "true",
+					"height" : 345,
+					"width" : 91
+				}, {
+					"id" : "33",
+					"title" : "Book",
+					"label" : "Book",
+					"image" : "assets/Customizer_Images/Clipart/png/19.png",
+					"price" : 6,
+					"colorable" : "false",
+					"height" : 236,
+					"width" : 140
+				}, {
+					"id" : "34",
+					"title" : "Bookends",
+					"label" : "Bookends",
+					"image" : "assets/Customizer_Images/Clipart/png/21.png",
+					"price" : 4,
+					"colorable" : "true",
+					"height" : 232,
+					"width" : 230
+				}, {
+					"id" : "35",
+					"title" : "Bottle",
+					"label" : "Bottle",
+					"image" : "assets/Customizer_Images/Clipart/png/22.png",
+					"price" : 8,
+					"colorable" : "true",
+					"height" : 348,
+					"width" : 165
+				}, {
+					"id" : "36",
+					"title" : "Broom",
+					"label" : "Broom",
+					"image" : "assets/Customizer_Images/Clipart/png/23.png",
+					"price" : 9,
+					"colorable" : "true",
+					"height" : 371,
+					"width" : 100
+				}, {
+					"id" : "37",
+					"title" : "Candlestick 1",
+					"label" : "Candlestick 1",
+					"image" : "assets/Customizer_Images/Clipart/png/24.png",
+					"price" : 7,
+					"colorable" : "true",
+					"height" : 223,
+					"width" : 278
+				}, {
+					"id" : "38",
+					"title" : "Candlestick 2",
+					"label" : "Candlestick 2",
+					"image" : "assets/Customizer_Images/Clipart/png/25.png",
+					"price" : 6,
+					"colorable" : "true",
+					"height" : 269,
+					"width" : 95
+				}, {
+					"id" : "39",
+					"title" : "Chair 1",
+					"label" : "Chair 1",
+					"image" : "assets/Customizer_Images/Clipart/png/26.png",
+					"price" : 10,
+					"colorable" : "true",
+					"height" : 355,
+					"width" : 275
+				}, {
+					"id" : "40",
+					"title" : "Chair 2",
+					"label" : "Chair 2",
+					"image" : "assets/Customizer_Images/Clipart/png/27.png",
+					"price" : 4,
+					"colorable" : "false",
+					"height" : 450,
+					"width" : 246
+				},{
+					"id" : "501",
+					"title" : "Painter",
+					"label" : "Painter",
+					"image" : "assets/Customizer_Images/Clipart/png/501.png",
+					"price" : 3,
+					"colorable" : "false",
+					"height" : 149,
+					"width" : 237
+				},{
+					"id" : "502",
+					"title" : "Painter1",
+					"label" : "Painter1",
+					"image" : "assets/Customizer_Images/Clipart/png/502.png",
+					"price" : 3,
+					"colorable" : "false",
+					"height" : 55,
+					"width" : 110
+				},{
+					"id" : "503",
+					"title" : "Lisa",
+					"label" : "Lisa",
+					"image" : "assets/Customizer_Images/Clipart/png/503.png",
+					"price" : 3,
+					"colorable" : "false",
+					"height" : 54,
+					"width" : 72
+				},{
+					"id" : "508",
+					"title" : "Pallete",
+					"label" : "Pallete",
+					"image" : "assets/Customizer_Images/Clipart/png/508.png",
+					"price" : 3,
+					"colorable" : "false",
+					"height" : 57,
+					"width" : 64
+				},{
+					"id" : "509",
+					"title" : "Camel",
+					"label" : "Camel",
+					"image" : "assets/Customizer_Images/Clipart/png/509.png",
+					"price" : 3,
+					"colorable" : "false",
+					"height" : 96,
+					"width" : 127
+				}]
+			}, {
+				"id" : "9",
+				"title" : "verschieden",
+				"label" : "verschieden",
+				"clipart" : [{
+					"id" : "14",
+					"title" : "Bullet",
+					"label" : "Bullet",
+					"image" : "assets/Customizer_Images/Clipart/png/130.png",
+					"price" : 12,
+					"colorable" : "false",
+					"height" : 92,
+					"width" : 280
+				}, {
+					"id" : "41",
+					"title" : "Belt Preservative",
+					"label" : "Belt Preservative",
+					"image" : "assets/Customizer_Images/Clipart/png/29.png",
+					"price" : 13,
+					"colorable" : "false",
+					"height" : 221,
+					"width" : 157
+				}, {
+					"id" : "42",
+					"title" : "Apple",
+					"label" : "Apple",
+					"image" : "assets/Customizer_Images/Clipart/png/94.png",
+					"price" : 5,
+					"colorable" : "true",
+					"height" : 235,
+					"width" : 269
+				}, {
+					"id" : "43",
+					"title" : "Armor",
+					"label" : "Armor",
+					"image" : "assets/Customizer_Images/Clipart/png/71.png",
+					"price" : 6,
+					"colorable" : "true",
+					"height" : 264,
+					"width" : 221
+				}, {
+					"id" : "44",
+					"title" : "Automobile 1",
+					"label" : "Automobile 1",
+					"image" : "assets/Customizer_Images/Clipart/png/32.png",
+					"price" : 5,
+					"colorable" : "false",
+					"height" : 237,
+					"width" : 291
+				}, {
+					"id" : "45",
+					"title" : "Automobile 2",
+					"label" : "Automobile 2",
+					"image" : "assets/Customizer_Images/Clipart/png/36.png",
+					"price" : 8,
+					"colorable" : "true",
+					"height" : 289,
+					"width" : 237
+				}, {
+					"id" : "46",
+					"title" : "Baby Carriage",
+					"label" : "Baby Carriage",
+					"image" : "assets/Customizer_Images/Clipart/png/37.png",
+					"price" : 6,
+					"colorable" : "true",
+					"height" : 208,
+					"width" : 158
+				}, {
+					"id" : "47",
+					"title" : "Watch 1",
+					"label" : "Watch 1",
+					"image" : "assets/Customizer_Images/Clipart/png/38.png",
+					"price" : 7,
+					"colorable" : "true",
+					"height" : 189,
+					"width" : 84
+				}, {
+					"id" : "48",
+					"title" : "Watch 2",
+					"label" : "Watch 2",
+					"image" : "assets/Customizer_Images/Clipart/png/39.png",
+					"price" : 8,
+					"colorable" : "false",
+					"height" : 187,
+					"width" : 79
+				}, {
+					"id" : "49",
+					"title" : "Watch 3",
+					"label" : "Watch 3",
+					"image" : "assets/Customizer_Images/Clipart/png/40.png",
+					"price" : 1,
+					"colorable" : "true",
+					"height" : 185,
+					"width" : 104
+				}, {
+					"id" : "50",
+					"title" : "Watch 4",
+					"label" : "Watch 4",
+					"image" : "assets/Customizer_Images/Clipart/png/41.png",
+					"price" : 6,
+					"colorable" : "true",
+					"height" : 185,
+					"width" : 89
+				}, {
+					"id" : "51",
+					"title" : "Fig",
+					"label" : "Fig",
+					"image" : "assets/Customizer_Images/Clipart/png/42.png",
+					"price" : 8,
+					"colorable" : "true",
+					"height" : 229,
+					"width" : 166
+				}]
+			}, {
+				"id" : "10",
+				"title" : "Pflanzen und Blumen",
+				"label" : "Pflanzen und Blumen",
+				"clipart" : [{
+					"id" : "15",
+					"title" : "Palm Trees at Night",
+					"label" : "Palm Trees at Night",
+					"image" : "assets/Customizer_Images/Clipart/png/43.png",
+					"price" : 6,
+					"colorable" : "true",
+					"height" : 301,
+					"width" : 330
+				}, {
+					"id" : "52",
+					"title" : "Acorns",
+					"label" : "Acorns",
+					"image" : "assets/Customizer_Images/Clipart/png/44.png",
+					"price" : 6,
+					"colorable" : "false",
+					"height" : 249,
+					"width" : 192
+				}, {
+					"id" : "53",
+					"title" : "Flower 1",
+					"label" : "Flower 1",
+					"image" : "assets/Customizer_Images/Clipart/png/46.png",
+					"price" : 5,
+					"colorable" : "false",
+					"height" : 247,
+					"width" : 211
+				}, {
+					"id" : "54",
+					"title" : "Flower 2",
+					"label" : "Flower 2",
+					"image" : "assets/Customizer_Images/Clipart/png/47.png",
+					"price" : 3,
+					"colorable" : "true",
+					"height" : 203,
+					"width" : 240
+				}, {
+					"id" : "55",
+					"title" : "Trees 1",
+					"label" : "Trees 1",
+					"image" : "assets/Customizer_Images/Clipart/png/48.png",
+					"price" : 4,
+					"colorable" : "true",
+					"height" : 237,
+					"width" : 162
+				}]
+			}]
+		}, {
+			"id" : "7",
+			"title" : "Gestaltung und Kunst",
+			"label" : "Gestaltung und Kunst",
+			"subcategory" : [{
+				"id" : "11",
+				"title" : "Kunsthandwerk",
+				"label" : "Kunsthandwerk",
+				"isDefault" : "11",
+				"clipart" : [{
+					"id" : "16",
+					"title" : "Dying Thread",
+					"label" : "Dying Thread",
+					"image" : "assets/Customizer_Images/Clipart/png/49.png",
+					"price" : 6,
+					"colorable" : "true",
+					"height" : 202,
+					"width" : 216
+				}, {
+					"id" : "17",
+					"title" : "Animal - Head",
+					"label" : "Animal - Head",
+					"image" : "assets/Customizer_Images/Clipart/png/50.png",
+					"price" : 3,
+					"colorable" : "false",
+					"height" : 148,
+					"width" : 141
+				}]
+			}, {
+				"id" : "12",
+				"title" : "Höhlen-Kunst",
+				"label" : "Höhlen-Kunst",
+				"clipart" : [{
+					"id" : "18",
+					"title" : "Animal Leaping",
+					"label" : "Animal Leaping",
+					"image" : "assets/Customizer_Images/Clipart/png/96.png",
+					"price" : 6,
+					"colorable" : "true",
+					"height" : 87,
+					"width" : 204
+				}, {
+					"id" : "19",
+					"title" : "Antelope 1",
+					"label" : "Antelope 1",
+					"image" : "assets/Customizer_Images/Clipart/png/97.png",
+					"price" : 8,
+					"colorable" : "true",
+					"height" : 82,
+					"width" : 138
+				}, {
+					"id" : "20",
+					"title" : "Antelope 2",
+					"label" : "Antelope 2",
+					"image" : "assets/Customizer_Images/Clipart/png/55.png",
+					"price" : 9,
+					"colorable" : "true",
+					"height" : 103,
+					"width" : 135
+				}, {
+					"id" : "21",
+					"title" : "Antelope 3",
+					"label" : "Antelope 3",
+					"image" : "assets/Customizer_Images/Clipart/png/57.png",
+					"price" : 16,
+					"colorable" : "true",
+					"height" : 133,
+					"width" : 217
+				}, {
+					"id" : "22",
+					"title" : "Arrow 1",
+					"label" : "Arrow 1",
+					"image" : "assets/Customizer_Images/Clipart/png/58.png",
+					"price" : 11,
+					"colorable" : "true",
+					"height" : 194,
+					"width" : 35
+				}, {
+					"id" : "23",
+					"title" : "Arrow 2",
+					"label" : "Arrow 2",
+					"image" : "assets/Customizer_Images/Clipart/png/59.png",
+					"price" : 11,
+					"colorable" : "true",
+					"height" : 106,
+					"width" : 151
+				}, {
+					"id" : "56",
+					"title" : "Antelope 1",
+					"label" : "Antelope 1",
+					"image" : "assets/Customizer_Images/Clipart/png/62.png",
+					"price" : 9,
+					"colorable" : "false",
+					"height" : 82,
+					"width" : 138
+				}, {
+					"id" : "57",
+					"title" : "Warrior 06",
+					"label" : "Warrior 06",
+					"image" : "assets/Customizer_Images/Clipart/png/63.png",
+					"price" : 6,
+					"colorable" : "false",
+					"height" : 121,
+					"width" : 119
+				}, {
+					"id" : "58",
+					"title" : "Warriors 3",
+					"label" : "Warriors 3",
+					"image" : "assets/Customizer_Images/Clipart/png/64.png",
+					"price" : 3,
+					"colorable" : "false",
+					"height" : 125,
+					"width" : 149
+				}, {
+					"id" : "59",
+					"title" : "Musician 4",
+					"label" : "Musician 4",
+					"image" : "assets/Customizer_Images/Clipart/png/65.png",
+					"price" : 9,
+					"colorable" : "true",
+					"height" : 241,
+					"width" : 194
+				}, {
+					"id" : "60",
+					"title" : "Lizard 3",
+					"label" : "Lizard 3",
+					"image" : "assets/Customizer_Images/Clipart/png/67.png",
+					"price" : 8,
+					"colorable" : "false",
+					"height" : 245,
+					"width" : 222
+				}, {
+					"id" : "61",
+					"title" : "Mastodon",
+					"label" : "Mastodon",
+					"image" : "assets/Customizer_Images/Clipart/png/77.png",
+					"price" : 3,
+					"colorable" : "true",
+					"height" : 152,
+					"width" : 228
+				}, {
+					"id" : "62",
+					"title" : "Hunter 07",
+					"label" : "Hunter 07",
+					"image" : "assets/Customizer_Images/Clipart/png/76.png",
+					"price" : 7,
+					"colorable" : "true",
+					"height" : 211,
+					"width" : 169
+				}]
+			}]
+		}]
+	}]
+}]

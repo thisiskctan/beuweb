@@ -1,0 +1,19 @@
+{
+	"fonts": [
+		{
+
+			"fontName": "Lobster",
+			"fontsId": "1",
+			"ttf": "assets/fonts/ttf/Lobster-Regular.ttf"
+		}, {
+
+			"fontName": "Lora",
+			"fontsId": "2",
+			"ttf": "assets/fonts/ttf/Lora-Regular.ttf"
+		}, {
+			"fontName": "Shadows Into Light",
+			"fontsId": "3",
+			"ttf": "assets/fonts/ttf/ShadowsIntoLight.ttf"
+		}
+	]
+}
