@@ -1,0 +1,66 @@
+
+Approved  for phase 1.2.
+
++++ Customer should have an option to set the default TAB to be open in his customizer tool like currently we have PRODUCT tab open but not every customer would like it. He may require that if he would have been able to set CLIPART tab to open in default.
+
+Sparx : 20-30 min.-----------------Done
+
++++  Load tool with a sample design. like: https://nimbus.everhelper.me/client/notes/share/117976/MBgueA7ZOGMU1OwD8Qm8M2TIrkFSdFyi/
+First thing we will do this in our DEMO/LivePreview so a user who is reviewing our tool to purchase don't have to DRAG and DROP item rather he can select these text and clipart & start exploring right from here. Also this feature can be further used by customer who are purchasing this. We can discuss it on how to build this.
+
+Sparx : 4-5 hrs.-------------------Done
+
++++ improve data loading
+
+Sparx : 1-2 hrs.
+
++++ Multi Item selection in drawing area and collective move, rotate and resize functionality.
+
+Sparx : 3-4 hrs.
+
++++ Multi-Language
+
+Sparx : 5-6 hrs.
+
++++ On Black t-shirt DrawArea should be of different color
+   (means drawArea dotted line should not match with t-shirt color)
+
+Sparx : 
+
++++ Improve Handler designing.
+
+Sparx : Please provide a updated handler design images.
+
++++ Check for handler image transition like zoom
+
+Sparx : RnD Point.
+
++++ handler controller tooltip
+
+Sparx : RnD Point.
+
++++  when we drag the icons on handlers should be hide just the border will remain once dropped the icons will appear back.
+
+Sparx : RnD Point.
+
+++++ Improve ORDER INFO box UI on TABLET & MOBILE device. I have earlier instructed to make it full screen kind of on MOBILE. we can plan it better this time and have it done similarly.
+
+Sparx : Designing Point.
+
+
+
+
+
+Feature 1
++++ Names & Number
++++ Multiple Size selection
++++ RTL compatible.
+
+++++  SVG image upload
+++++  Image effects
+++++  Shape cllipping feature
+++++  Text border, border color , text glow, letter spacing
+
++++ Multiple Draw Area
++++ It would be great to have alignment feature like we have in CASEABLE in desiging area.
+
