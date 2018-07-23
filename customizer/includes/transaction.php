@@ -23,33 +23,12 @@ class Transaction
         return $query->fetch();
     }
     
-    public function record($order_id)
+    public function record($data)
     {
         global $pdo;
 
-        $order_details = $this->get_transaction_details($order_id);
-        $status = '';
-        $message = '';
-        $created_at = now();
-        $updated_at = now();
-
-        $data = array(
-            'order_id'         => $order_details->orderid,
-            'transaction_id'   => '',
-            'transaction_date' => '',
-            'status'           => '',
-            'type'             => '',
-            'merchant_id'      => '',
-            'app_id'           => '',
-            'user_id'          => '',
-            'payment_method'   => '',
-            'country_code'     => '',
-            'payment_paid'     => '',
-            'currency'         => '',
-            'gross_received'   => '',
-            'transaction_fee'  => '',
-            'net_received'     => '',
-        );
+        $data['created_at'] = date('Y-m-d H:i:s');
+        $data['updated_at'] = date('Y-m-d H:i:s');
 
         $pdo_cols_val = array_map(function ($val) {
             return ':' . $val;
@@ -69,8 +48,6 @@ class Transaction
         foreach ($data as $key => $value) {
             $query->bindValue(':' . $key, $value);
         }
-        $query->bindValue(':status', "Pending");
-
 
         /**
          * Execute PDO
@@ -82,45 +59,148 @@ class Transaction
         }
     }
 
-    public function get_transaction_details($order_id)
+    public function handleTransaction($post)
+    {
+        $response = array();
+        $isError = false;
+
+        $order_id = isset($post['MerchantOrdID']) ? $post['MerchantOrdID'] : null;
+        $order_id = $this->convertToNormalId($order_id);
+
+        $data = array(
+            'order_id'          => $order_id,
+            'ptxn_id'           => isset($post['PTxnID']) ? $post['PTxnID'] : null,
+            'ptxn_status'       => isset($post['PTxnStatus']) ? $post['PTxnStatus'] : null,
+            'ptxn_msg'          => isset($post['PTxnMsg']) ? $post['PTxnMsg'] : null,
+            'txntype'           => isset($post['TxnType']) ? $post['TxnType'] : null,
+            'method'            => isset($post['Method']) ? $post['Method'] : null,
+            'merchant_id'       => isset($post['MerchantID']) ? $post['MerchantID'] : null,
+            'merchant_pymtid'   => isset($post['MerchantPymtID']) ? $post['MerchantPymtID'] : null,
+            'merchant_ordid'    => isset($post['MerchantOrdID']) ? $post['MerchantOrdID'] : null,
+            'merchant_txnamt'   => isset($post['MerchantTxnAmt']) ? $post['MerchantTxnAmt'] : null,
+            'merchant_currcode' => isset($post['MerchantCurrCode']) ? $post['MerchantCurrCode'] : null,
+            'sign'              => isset($post['Sign']) ? $post['Sign'] : null,
+            'acqbank'           => isset($post['AcqBank']) ? $post['AcqBank'] : null,
+            'bankrefno'         => isset($post['BankRefNo']) ? $post['BankRefNo'] : null,
+            'authcode'          => isset($post['AuthCode']) ? $post['AuthCode'] : null,
+        );
+        $this->record($data);
+
+        $order = new Order;
+        $order = $order->fetch_data($data['order_id']);
+
+        if (!$this->isSignatureMatch($data, $order)) {
+            $response['status'] = 'error';
+            $response['message'] = 'Signature not match.';
+
+            $isError = true;
+        }
+        if (!$this->isOrderExists($data, $order)) {
+            $response['status'] = 'error';
+            $response['message'] = 'Order is not exist in our system.';
+
+            $isError = true;
+        }
+        if (!$this->isPaymentStatusSuccess($data, $order)) {
+            $response['status'] = 'error';
+            $response['message'] = 'Transaction Failed.';
+
+            $isError = true;
+        }
+        if (!$this->isAmountEqual($data, $order)) {
+            $response['status'] = 'error';
+            $response['message'] = 'Amount you paid is less than it should be.';
+
+            $isError = true;
+        }
+
+        if ($isError === true) {
+            $this->updateOrderStatus($data, 'Reject');
+        } else {
+            $response['status'] = 'success';
+            $response['message'] = 'All good!';
+
+            $this->updateOrderStatus($data, 'Paid');
+        }
+        
+
+        return $response;
+    }
+
+    public function convertToNormalId($order_id)
+    {
+        $order_id = ltrim($order_id, "A");
+        $order_id = ltrim($order_id, "0");
+
+        return $order_id;
+    }
+
+    public function isSignatureMatch($provided, $order)
     {
         global $payment_gateway;
 
-        $signature_data = array(
-            $payment_gateway['merchant_id'],
-            $order_id,
-            $payment_gateway['app_secret'],
-        );
-        $signature = md5(implode('', $signature_data));
-
-        $order = new Order();
-        $clear_order_id = ltrim($order_id, 'A');
-        $clear_order_id = ltrim($clear_order_id, '0');
-        $order = (object) $order->fetch_data($clear_order_id);
-
-        $email = $order->email;
-        $email = $order->email;
-
         $data = array(
-            'mid'        => $merchant_id,
-            'appid'      => $payment_gateway['app_id'],
-            'muid'       => $email,
-            'orderid'    => $order_id,
-            'msignature' => $signature,
+            $payment_gateway['merchant_password'],
+            $provided['merchant_id'],
+            $provided['merchant_pymtid'],
+            $provided['ptxn_id'],
+            $provided['merchant_ordid'],
+            $provided['merchant_txnamt'],
+            $provided['merchant_currcode'],
+            $provided['ptxn_status'],
+            $provided['AuthCode'],
         );
+        $signature = hash('sha512', implode('', $data));
 
-        $checkout_params = http_build_query($data);
-        $payment_entry_point = "https://www.paydibs.com:8443/upaytest/call_returntran";
-        $payment_gateway_url = $payment_entry_point . "?" . $checkout_params;
+        if ($signature != $provided['sign']) {
+            return false;
+        }
 
-        $response = file_get_contents($payment_gateway_url);
+        return true;
+    }
 
+    public function isOrderExists($provided, $order)
+    {
+        global $payment_gateway;
 
-        /**
-         * Stuck cannot test output provided by server.
-         */
+        if (is_null($order)) {
+            return false;
+        }
+        if ($order['order_id'] != $provided['order_id']) {
+            return false;
+        }
 
+        return true;
+    }
 
-        return null;
+    public function isPaymentStatusSuccess($provided, $order)
+    {
+        if ($provided['ptxn_status'] != '0') {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function isAmountEqual($provided, $order)
+    {
+        if ($provided['merchant_txnamt'] != $this->moneyFormat($order['total_price'])) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function updateOrderStatus($provided, $status)
+    {
+        $order = new Order;
+        $order = $order->update_status($provided['order_id'], $status);
+
+        return $response;
+    }
+
+    public function moneyFormat($value = 0)
+    {
+        return str_replace(',', '', number_format($value, 2));
     }
 }

@@ -10,52 +10,9 @@ if (!isset($_SESSION['_checkout_order_id'])) {
 }
 
 $order_id = $_SESSION['_checkout_order_id'];
-$merchant_id = $payment_gateway['merchant_id'];
-$app_id = $payment_gateway['app_id'];
-$app_secret = $payment_gateway['app_secret'];
-
-
-$order = new Order();
-$order = (object) $order->fetch_data($order_id);
-
-$currency = 'MYR';
-$order_id = 'A'.str_pad($order->order_id, 5, '0', STR_PAD_LEFT);
-$amount = $order->total_price;
-$email = $order->email;
-
-$data = array(
-  'mid'        => $merchant_id,
-  'appid'      => $app_id,
-  'muid'       => $email,
-  'orderid'    => $order_id,
-  'ordercurr'  => $currency,
-  'orderamt'   => $amount,
-  // 'ordertext'  => "Payment for item:{$order_id}",
-);
-$data['msignature'] = generateSignature($data);
-
-$checkout_params = http_build_query($data);
-$payment_entry_point = "https://www.paydibs.com:8443/upaytest/transact_iframeneworderbyinv";
-$payment_gateway_url = $payment_entry_point . "?" . $checkout_params;
-
-function generateSignature($data)
-{
-    global $app_secret;
-
-    $data = array(
-        $data['appid'],
-        $data['orderid'],
-        $data['ordercurr'],
-        $data['orderamt'],
-        $app_secret,
-    );
-
-    return md5(implode('', $data));
-}
-
-
-print_r($payment_gateway_url);
-exit;
+$orderClass = new Order();
+$order = (object) $orderClass->fetch_data($order_id);
+$payment = $orderClass->checkout($order);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
@@ -83,73 +40,41 @@ exit;
     fbq('init', '218730028677294'); // BACKUP
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2030476210560162&ev=PageView&noscript=1" /></noscript>
-  <!-- Facebook Pixel Code (BACKUP) -->
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=218730028677294&ev=PageView&noscript=1" /></noscript>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2030476210560162&ev=PageView&noscript=1" />
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=218730028677294&ev=PageView&noscript=1" />
+  </noscript>
   <!-- End Facebook Pixel Code -->
 </head>
 <body>
   <div class="main-contentarea">
     <div class="page-title"></div>
 
-    <div id="payment-gateway-iframe">
-      <iframe src='<?php echo $payment_gateway_url; ?>' width='1000' height='1000' scrolling='auto' frameborder='0'></iframe>
+    <div id="payment-gateway">
+      <form id="form-payment-gateway" name="frmTestPay" method="post" action="<?php echo $payment_gateway['posturl'] ?>">
+        <input type="hidden" name="TxnType" value="PAY" />
+        <input type="hidden" name="MerchantID" value="<?php echo $payment_gateway['merchant_id']; ?>" />
+        <input type="hidden" name="MerchantPymtID" value="<?php echo $payment->paymentid; ?>" />
+        <input type="hidden" name="MerchantOrdID" value="<?php echo $payment->orderid; ?>" />
+        <input type="hidden" name="MerchantOrdDesc" value="<?php echo $payment->ordertext; ?>" />
+        <input type="hidden" name="MerchantTxnAmt" value="<?php echo $payment->orderamt; ?>" />
+        <input type="hidden" name="MerchantCurrCode" value="<?php echo $payment->ordercurr ?>" />
+        <input type="hidden" name="MerchantRURL" value="<?php echo $payment->response_url; ?>" />
+        <input type="hidden" name="CustIP" value="<?php echo $payment->ipaddress; ?>" />
+        <input type="hidden" name="CustName" value="<?php echo $payment->name; ?>" />
+        <input type="hidden" name="CustEmail" value="<?php echo $payment->email; ?>" />
+        <input type="hidden" name="CustPhone" value="<?php echo $payment->phone; ?>" />
+        <input type="hidden" name="Sign" value="<?php echo $payment->signature; ?>" />
+        <input type="hidden" name="MerchantCallbackURL" value="<?php echo $payment->callback_url; ?>" />
+      </form>
     </div>
   </div>
-
-
-  <script type="text/javascript" src="assets/Skin/js/jquery-latest.js"></script>
-  <script type="text/javascript" src="assets/Skin/js/jquery.translate.js"></script>
   <script>
-    var jq = $.noConflict();
-    var eventType ='';  //'ontouchend' in document ? 'touchstart' : 'click';
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      if ('ontouchend' in document || (/windows phone/i.test(navigator.userAgent.toLowerCase()))){
-       eventType = (document.ontouchstart!==null)? 'click' : 'touchstart';
-       }
-    }else if ('onclick' in document.documentElement) {
-      if ((document.ontouchstart!==null) || (document.ontouchstart===null) ) {
-        if((document.ontouchstart!==null)){eventType = 'click';}
-        else{eventType = 'click';}
-      }
-    }
-    var opc_get_lang = 'assets/PHP/get_lang.php';
-    var opc_lang = '<?php echo $_SESSION['lang']?>';
-    var opc_views = '<?php echo json_encode($pngOutputArr);?>';
-    var opc_viewName = '<?php echo json_encode($viewsName);?>';
-    //this is used for feedback form
-    /*
-    jq(document).on('click','#feedbackform',function(){
-          jq("#backoverlay").css("display", "block");
-          jq("#feedFormDiv").css("display", "block");
-        });
-        jq(document).on('click','#feedFormDiv p',function(){
-          jq("#backoverlay").css("display", "none");
-          jq("#feedFormDiv").css("display", "none");
-        });
-        jq(document).on('click','#feedFormDiv p',function(){
-          jq("#backoverlay").css("display", "none");
-          jq("#feedFormDiv").css("display", "none");
-        });
-        jq(document).on('click','#submitForm',function() {
-          if (jq('#inptName').val() != '' && jq('#inptEmail').val()) {
-            jq("#backoverlay").css("display", "none");
-            jq("#feedFormDiv").css("display", "none");
-            jq("#outputGen .pdfDown").removeClass("disabledATag");
-            jq("#outputGen .svgDown").removeClass("disabledATag");
-            jq('#inptName').val('');
-            jq('#inptEmail').val('');
-            jq('#inptNumber').val('');
-            jq('#inptComment').val('');
-          }
-          else{
-            
-          }
-        });*/
-    
-    //submitForm
+    var $form = document.querySelector('#form-payment-gateway');
+    setTimeout(function(){
+      $form.submit();
+    }, 1000);
   </script>
-  <script type="text/javascript" src="assets/Library/output.js"></script>
 </body>
 </html>
 

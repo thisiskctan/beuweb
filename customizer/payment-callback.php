@@ -6,7 +6,10 @@ include_once('./includes/transaction.php');
 $payment_gateway = include_once('./includes/payment_gateway.php');
 error_reporting(1);
 
-if (!isset($_GET['orderid'])) {
-    header('Location: ../../');
+$response = $_REQUEST;
+if (sizeof($response) < 1) {
+    exit;
 }
-$order_id = $_GET['orderid'];
+
+$transaction = new Transaction();
+$result = $transaction->handleTransaction($response);

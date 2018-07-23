@@ -1,7 +1,10 @@
 <?php
 
 return array(
-    'merchant_id' => '168',
-    'app_id'      => '219',
-    'app_secret'  => null,
+    'posturl'           => 'https://dev.paydibs.com/PPGSG/PymtCheckout.aspx',
+    'merchant_id'       => '',
+    'merchant_password' => '',
+    'currency'          => 'MYR',
+    'response_url'      => 'http://localhost/beuweb.com.my/customizer/payment-response.php',
+    'callback_url'      => 'http://localhost/beuweb.com.my/customizer/payment-callback.php',
 );
